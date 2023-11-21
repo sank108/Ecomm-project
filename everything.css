@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.navbar-1{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.navbar-1 a{
+    text-decoration: none;
+    color: #6a9739;
+}
+.navbar-2{
+    width: 400px;
+    display: flex;
+    
+    align-items: center;
+    margin-top: 10px;
+    margin-right: -50px;
+    
+}
+
+.Everything{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Juice{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Grocceries{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cart{
+    display: flex;
+    gap: 20px;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.about{
+    gap: 30px;
+    display: flex;
+    margin-right: 20px;
+}
+
+.About{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Contact{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.logoimg{
+    margin-left: 32px;
+    margin-top: -3px;
+}
+
+.basket{
+    margin-top: -4px;
+    color: #8bc34a;
+    cursor: pointer;
+}
+
+.cart>p{
+    color:#8bc34a;
+    cursor: pointer;
+}
+
+.fa-user{cursor: pointer;}
+
+.Everything:hover{
+    transition: all;
+    transition-duration: 0.3s;    
+    color: #8bc34a;
+    cursor: pointer;
+
+}
+
+.Grocceries:hover{
+    transition: all;
+    transition-duration: 0.3s;    
+    color: #8bc34a;
+    cursor: pointer;
+
+}
+
+.Juice:hover{
+    transition: all;
+    transition-duration: 0.3s;    
+    color: #8bc34a;
+    cursor: pointer;
+
+}
+
+.About:hover{
+    transition: all;
+    transition-duration: 0.3s;    
+    color: #8bc34a;
+    cursor: pointer;
+
+}
+
+.Contact:hover{
+    transition: all;
+    transition-duration: 0.3s;    
+    color: #8bc34a;
+    cursor: pointer;
+
+}
+
+.shop{
+    margin-top: 20px;
+    height: 2000px;
+    width: 100%;
+    background-color: #f8f6f3;
+}
+
+.shop-1{
+    width: 1225px;
+    height: 2000px;
+    margin-left: 125px;
+}
+
+.search-products input{
+    width: 200px;
+    height: 42px;
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0px 0px 1px grey,0px 0px 2px grey,0px 0px 3px grey;
+
+}
+
+::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.search-products{
+    padding-top: 68px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-products-btn{
+    background: #8bc34a;
+    height: 40px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.search-products-btn:hover{
+    transition: all;
+    transition-duration: 1s;
+    background-color:#6a9739;
+    
+}
+
+.fa-arrow-right{
+    color: #ffffff;
+}
+
+.shop-product-range{
+    padding-top: 42px;
+    padding-left: 2px;
+}
+.shop-head{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.slider{
+    width: 250px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: black;
+    position: relative;
+}
+
+.progress{
+    width: 250px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #8bc34a;
+    position: absolute;
+}
+
+.range-input{
+    position: relative;
+}
+
+.range-input input{
+    position: absolute;
+    top: -10px;
+    width: 250px;
+    background: none;
+    -webkit-appearance: none;
+    pointer-events: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    background: #8bc34a;
+}
+
+input[type="range"]::-moz-range-thumb{
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    pointer-events: auto;
+    -moz-appearance: none;
+    background: #8bc34a;
+    border: none;
+}

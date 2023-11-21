@@ -23,15 +23,36 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-   
 }
+
+.navbar-1 a{
+    text-decoration: none;
+    color: #111111;
+}
+
+.Everything{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Juice{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Grocceries{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .navbar-2{
-    width: 300px;
+    width: 400px;
     display: flex;
     
     align-items: center;
     margin-top: 10px;
-    margin-right: 70px;
+    margin-right: -50px;
+    
 }
 
 .cart{
@@ -49,6 +70,15 @@
     margin-right: 20px;
 }
 
+.About{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Contact{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
 
 .logoimg{
     margin-left: 32px;
@@ -58,15 +88,19 @@
 .basket{
     margin-top: -4px;
     color: #8bc34a;
+    cursor: pointer;
 }
 
 .cart>p{
     color:#8bc34a;
+    cursor: pointer;
 }
+
+.fa-user{cursor: pointer;}
 
 .Everything:hover{
     transition: all;
-    transition-duration: 1s;    
+    transition-duration: 0.3s;    
     color: #8bc34a;
     cursor: pointer;
 
@@ -74,7 +108,7 @@
 
 .Grocceries:hover{
     transition: all;
-    transition-duration: 1s;    
+    transition-duration: 0.3s;    
     color: #8bc34a;
     cursor: pointer;
 
@@ -82,7 +116,7 @@
 
 .Juice:hover{
     transition: all;
-    transition-duration: 1s;    
+    transition-duration: 0.3s;    
     color: #8bc34a;
     cursor: pointer;
 
@@ -90,7 +124,7 @@
 
 .About:hover{
     transition: all;
-    transition-duration: 1s;    
+    transition-duration: 0.3s;    
     color: #8bc34a;
     cursor: pointer;
 
@@ -98,8 +132,612 @@
 
 .Contact:hover{
     transition: all;
-    transition-duration: 1s;    
+    transition-duration: 0.3s;    
     color: #8bc34a;
     cursor: pointer;
 
+}
+
+.home-container{
+    display: flex;
+    background: #f8f6f3;
+    margin-top: 30px;
+    
+}
+.home-container-2{
+    margin-top: 100px;
+    display: flex;
+}
+
+.home-bag-img{
+    margin-top: 10px;
+    margin-left: 140px;
+    margin-right: 80px;
+}
+
+.home-container-3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 30px;
+    width: 550px;
+}
+
+.leaf-1{
+    margin-bottom: 10px;
+}
+
+.best{
+    color: #111111;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+}
+
+.head{
+    color: #111111;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 52px;
+    margin-top: -12px;
+    line-height: 1.3;
+    
+}
+
+.para-1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.btn-1{
+    display: flex;
+    background: #8bc34a;
+    height: 48px;
+    width: 175px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    transition: all;
+    transition-duration: 1s;
+    background-color:#6a9739;
+}
+
+.fa-cart-shopping{
+    color: #f8f6f3;
+}
+
+.para-2{
+    color: #f8f6f3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+}
+
+.leaf-2{
+    background-image: url(https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/leaves-free-img.png);
+    margin-left:-300px;
+    margin-top: 400px;
+    background-size: 28% auto;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    height: 400px;
+    width: 400px;
+    opacity: .25;
+}
+
+.service{
+    height: 215px;
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.services{
+    width:1700px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-1{
+    background-color: #424242;
+    height: 128px;
+    width: 310px;
+    /* opacity: .75; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.Shipping-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.fa-xl{
+    color: #a2f544;
+}
+
+.para-3{
+    color: #ffffff;
+    font-family: 'Merriweather', sans-serif;
+    opacity: 1.0;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.para-4{
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+.best-selling-products{
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+    margin-bottom: 200px;
+}
+
+.head-1{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 34px;
+    color: #111111;
+    margin-bottom: 15px;
+    
+    /* margin-top: -1000px; */
+}
+
+.img-2{
+    margin-bottom: 30px;
+}
+
+.img-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products{
+    display: flex;
+    gap: 20px;
+    
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.para-5{
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 13.6px;
+}
+
+.head-2{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 16px;
+    color: #111111;
+}
+
+.rating{
+    display: flex;
+}
+
+.product-quality{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-color: #f8f6f3;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.product-quality-product{
+    height: 375px;
+    width: 375px;
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px grey,0px 0px 8px grey,0px 0px 12px grey;
+}
+
+.bg-image{
+    height: 450px;
+    width: 280px;
+    /* background-size: cover; */
+    overflow: hidden;
+    border-radius: 10px;
+    background-size: contain;
+    margin-left: 100px;
+    
+}
+
+.product-quality-product-head{
+    position: absolute;
+    margin-top: 50px;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 24px;
+    color: #111111;
+}
+
+.product-quality-product-para-1{
+    position: absolute;
+    margin-top: 90px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 16px;
+}
+
+.product-quality-product-para-2{
+    position: absolute;
+    margin-top: 115px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 16px;
+}
+
+.btn-2{
+    position: absolute;
+    margin-top: 160px;
+    margin-right: 115px;
+}
+
+.fa-arrow-right{
+    color: #ffffff;
+}
+
+.first-purchase-1{
+    height: 170px;
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+}
+
+.first-purchase-1-para{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 34px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 138px;
+    margin-right: 200px;
+}
+
+.first-purchase-registration{
+    height: 100px;
+    width: 100%;
+    background-color: #f8f6f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-purchase-para{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 24px;
+    color: #111111;
+    font-weight: 600;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -30px;
+}
+
+.review-div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.review{
+    height: 350px;
+    width: 350px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px grey,0px 0px 4px grey,0px 0px 6px grey;
+    margin-top: 150px;
+}
+.fastar{
+    color: goldenrod;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.review-maker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.review-para{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-paras{
+    margin-bottom: 5px;
+}
+
+.review-img{
+    height: 412px;
+    width: 375px;
+    background-color: #111111;
+    border-radius: 10px;
+    margin-top: 90px;
+}
+
+.fresh-veges{
+    opacity: 0.3;
+    object-fit: cover;
+    border-radius:10px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.fresh-veges:hover{
+    opacity: 0.1;
+}
+
+.overlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
+
+}
+
+.overlay-head-1{
+    margin-top: -350px;
+    font-size: 34px;
+    font-family: 'Merriweather', sans-serif;
+    color: #ffffff;
+}
+
+.overlay-head-2{
+    font-size: 34px;
+    font-family: 'Merriweather', sans-serif;
+    color: #ffffff;
+}
+
+.overlay-head-3{
+    font-size: 34px;
+    font-family: 'Merriweather', sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.overlay-para-1{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay-para-1{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-3{
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review-maker-para{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #111111;
+}
+
+.img-3{
+    margin-left: 135px;
+    margin-bottom: -10px;
+}
+
+.head-1{
+    font-size: 34px;
+    font-family: 'Merriweather', sans-serif;
+
+}
+
+.brands{
+    margin-top: -110px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.brands-para{
+    font-size: 20px;
+    font-family: 'Merriweather', sans-serif;
+    color: #111111;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.logos{
+    margin-left: 40px;
+    margin-bottom: -8px;
+}
+
+.brands-img{
+    margin-right: 15px;
+}
+
+.footer{
+    margin-top: -100px;
+    height: 700px;
+    width: 100%;
+    background-color: #001524;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+
+.footer-content{
+    display: flex;
+    gap: 180px;
+    margin-left: 100px;
+}
+
+.footer-img{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.footer-para{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-left: -2px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 2px;
+}
+
+.Links{
+    margin-top: 80px;
+}
+
+.link-head{
+    font-size: 22px;
+    font-family: 'Merriweather', sans-serif;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.link-para{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-bottom: 3px;
+}
+
+.link-head-2{
+    font-size: 22px;
+    font-family: 'Merriweather', sans-serif;
+    color: #ffffff;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.additional-info{
+    margin-top: 80px;
+}
+
+.link-head1{
+    font-size: 22px;
+    font-family: 'Merriweather', sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.link-para1{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-bottom: 3px;
+}
+
+.link-para-1{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-bottom: 3px;
+    color: #8bc34a;
+}
+
+.app-info{
+    margin-top: 15px;
+}
+
+.footer-line{
+    height: 1px;
+    width: 100%;
+    background-color: #424242;
+    margin-top: 80px;
+}
+
+.copyright-para{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-left: 150px;
+}
+
+.copyright{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.fa-facebook{
+    color: #ffffffA8;
+    margin-right: 20px;
+}
+
+.fa-twitter{
+    color: #ffffffA8;
+    margin-right: 20px;
+}
+
+.fa-instagram{
+    color: #ffffffA8;
+}
+
+.copyright-icons{
+    margin-left: 800px;
 }
