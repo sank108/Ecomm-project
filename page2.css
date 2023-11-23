@@ -156,7 +156,7 @@
 }
 .shop-2{
     width: 300px;
-    height: 1600px;
+    height: 1300px;
     margin-left: 125px;
 }
 
@@ -374,7 +374,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .midline{
-    height: 1600px;
+    height: 1350px;
     width: 0.5px;
     margin-top: 70px;
     border: 0.5px gray;
@@ -460,7 +460,7 @@ input[type="range"]::-moz-range-thumb{
 .shop-list-items{
     margin-top: 50px;
     display: grid;
-    grid-template-rows: 430px 430px 430px;
+    grid-template-rows: 430px;
     grid-template-columns: 300px 300px 300px;
 }
 .shop-list-items-img{
@@ -516,7 +516,7 @@ input[type="range"]::-moz-range-thumb{
     display:flex;
     gap: 10px;
     margin-left: 10px;
-    
+    margin-top: 25px;
 }
 
 .page-no a{
@@ -524,16 +524,6 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .first-page{
-    height: 40px;
-    width: 40px;
-    background-color: #8bc34a;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.second-page{
     height: 40px;
     width: 40px;
     background-color: white;
@@ -546,7 +536,18 @@ input[type="range"]::-moz-range-thumb{
     cursor: pointer;
 }
 
-.second-page:hover{
+.second-page{
+    
+    height: 40px;
+    width: 40px;
+    background-color: #8bc34a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-page:hover{
     background-color: #8bc34a;
     color: white;
 }
@@ -570,7 +571,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .footer{
-    margin-top: 50px;
+    margin-top: 40px;
     height: 700px;
     width: 100%;
     background-color: #001524;

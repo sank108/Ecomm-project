@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.navbar{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f6f3;
+}
+.navbar-1{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.navbar-1 a{
+    text-decoration: none;
+    color: #111111;
+}
+
+.navbar-2 a{
+    text-decoration: none;
+    color: #111111;
+}
+
+.Everything{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Juice{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Grocceries{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-2{
+    width: 400px;
+    display: flex;
+    
+    align-items: center;
+    margin-top: 8px;
+    margin-right: -50px;
+    
+}
+
+.cart{
+    display: flex;
+    gap: 20px;
+    margin-left: 25px;
+    margin-right: 20px;
+    
+    
+}
+
+.about{
+    gap: 30px;
+    display: flex;
+    margin-right: 20px;
+}
+
+.About{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #8bc34a;
+}
+
+.Contact{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logoimg{
+    margin-left: 32px;
+    margin-top: -3px;
+}
+
+.basket{
+    margin-top: -4px;
+    color: #8bc34a;
+    cursor: pointer;
+}
+
+.cart>p{
+    color:#8bc34a;
+    cursor: pointer;
+}
+
+.fa-user{cursor: pointer;}
+
+.Everything:hover{
+    transition: all;
+    transition-duration: 0.3s;    
+    color: #8bc34a;
+    cursor: pointer;
+
+}
+
+.Grocceries:hover{
+    transition: all;
+    transition-duration: 0.3s;    
+    color: #8bc34a;
+    cursor: pointer;
+
+}
+
+.Juice:hover{
+    transition: all;
+    transition-duration: 0.3s;    
+    color: #8bc34a;
+    cursor: pointer;
+
+}
+
+.About:hover{
+    transition: all;
+    transition-duration: 0.3s;    
+    color: #8bc34a;
+    cursor: pointer;
+
+}
+
+.Contact:hover{
+    transition: all;
+    transition-duration: 0.3s;    
+    color: #8bc34a;
+    cursor: pointer;
+
+}
+
+.about-header{
+    height: 238px;
+    width: 100%;
+    background-color: #f8f6f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-heading{
+    font-size: 52px;
+    color: #111111;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+    margin-top: -60px;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+.about-header-img{
+   margin-top: -20px;
+}
