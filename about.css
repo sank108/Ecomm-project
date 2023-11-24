@@ -170,3 +170,90 @@
 .about-header-img{
    margin-top: -20px;
 }
+
+.about-body{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.about-body-head{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 34px;
+    color: #111111;
+    margin-bottom: 30px;
+}
+
+.about-body-para1{
+    margin-bottom: 3px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+
+}
+
+.about-body-para-1{
+    margin-top: 20px;
+}
+
+.background{
+    height: 175px;
+    width: 100%;
+    background-color: #001524;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.customer-info-para{
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+    margin-right: 160px;
+}
+
+.quality-provided{
+    display: flex;
+}
+
+.customer-info-para1{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.customer-info-para2{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.quality-provided{
+    gap: 180px;
+}
+.quality-provided1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 46px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.qualities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-provided2{
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
