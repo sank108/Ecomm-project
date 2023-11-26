@@ -6,10 +6,15 @@
 }
 
 
+
 .container{
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.container a{
+    text-decoration: none;
 }
 
 .navbar{
@@ -256,4 +261,360 @@
     font-size: 19px;
     font-family: 'Open Sans', sans-serif;
     color: #FFFFFF;
+}
+
+.cerified-products{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+}
+
+
+.cerified-product{
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 1280px;
+    height: 1000px;
+}
+
+.slider-frame{
+    position: absolute;
+    height: 680px;
+    width: 550px;
+    background-color: #f8f6f3;
+    margin-left: 35px;
+    margin-top: 80px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.img-container{
+    position: absolute;
+    height: 500px;
+    width: 450px;
+    /* background-color: #111111; */
+    margin-top: -80px;
+    border-radius: 10px;
+    
+    overflow: hidden;
+    
+}
+
+.wrapper{
+    width: 450px;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+
+    25%{
+        transform: translateX(0);
+    }
+
+    30%{
+        transform: translateX(-100%);
+    }
+
+    50%{
+        transform: translateX(-100%);
+    }
+
+    55%{
+        transform: translateX(-200%);
+    }
+
+    75%{
+        transform: translateX(-200%);
+    }
+
+    80%{
+        transform: translateX(-300%);
+    }
+
+    100%{
+        transform: translate(-300%);
+    }
+    
+}
+.review{
+    margin-top: 450px;
+    
+}
+.fastar{
+    position: absolute;
+    color: goldenrod;
+    display: flex;
+    margin-left: 160px;
+    /* margin-left: -53px; */
+    gap: 3px;
+}
+
+.review-para{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.review-para-1{
+    font-size: 16px;
+    color: #111111;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.review-maker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.review-para{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerified-product-information{
+    margin-left: 100px;
+}
+
+.logo-info{
+    padding-top: 250px;
+    padding-right: 600px;
+    /* padding-left: 100px; */
+    display: flex;
+}
+
+.cerified-product-information-info{
+    width: 500px;
+    padding-left: 30px;
+}
+
+.cerified-product-information-info-head{
+    font-size: 24px;
+    color: #111111;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cerified-product-information-info-para-1{
+    font-size: 16px;
+    color:#333333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cerified-product-qualities{
+    margin-top: 30px;
+}
+
+.cerified-product-qualities-heading{
+    font-size: 34px;
+    color: #111111;
+    font-family: 'Merriweather', sans-serif;
+}
+
+.cerified-product-qualities-img{
+    margin-top: 25px;
+}
+
+.cerified-product-quality{
+    margin-top: 25px;
+    height: 190px;
+    width: 500px;
+    /* background-color: red; */
+    display: flex;
+    gap: 150px;
+}
+
+.quality-list-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quality{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fa-circle-check{
+    color: #8bc34a;
+}
+
+.cerified-product-quality p{
+    font-size: 16px;
+    color: #111111;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-1{
+    display: flex;
+    background: #8bc34a;
+    height: 48px;
+    width: 230px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.btn-1:hover{
+    transition: all;
+    transition-duration: 1s;
+    background-color:#6a9739;
+}
+
+.fa-cart-shopping{
+    color: #FFFFFF;
+}
+
+.leaf-img{
+    margin-top: -190px;
+    margin-left: 290px;
+    opacity: .25;
+}
+
+.footer{
+    /* margin-top: 00px; */
+    height: 700px;
+    width: 100%;
+    background-color: #001524;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+
+.footer-content{
+    display: flex;
+    gap: 180px;
+    margin-left: 100px;
+}
+
+.footer-img{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.footer-para{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-left: -2px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 2px;
+}
+
+.Links{
+    margin-top: 80px;
+}
+
+.link-head{
+    font-size: 22px;
+    font-family: 'Merriweather', sans-serif;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.link-para{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-bottom: 3px;
+}
+
+.link-head-2{
+    font-size: 22px;
+    font-family: 'Merriweather', sans-serif;
+    color: #ffffff;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.additional-info{
+    margin-top: 80px;
+}
+
+.link-head1{
+    font-size: 22px;
+    font-family: 'Merriweather', sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.link-para1{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-bottom: 3px;
+}
+
+.link-para-1{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-bottom: 3px;
+    color: #8bc34a;
+}
+
+.app-info{
+    margin-top: 15px;
+}
+
+.footer-line{
+    height: 1px;
+    width: 100%;
+    background-color: #424242;
+    margin-top: 80px;
+}
+
+.copyright-para{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-left: 150px;
+}
+
+.copyright{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.fa-facebook{
+    color: #ffffffA8;
+    margin-right: 20px;
+}
+
+.fa-twitter{
+    color: #ffffffA8;
+    margin-right: 20px;
+}
+
+.fa-instagram{
+    color: #ffffffA8;
+}
+
+.copyright-icons{
+    margin-left: 800px;
 }
