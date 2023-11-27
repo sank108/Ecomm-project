@@ -152,7 +152,7 @@
 }
 
 .about-header{
-    height: 238px;
+    height: 280px;
     width: 100%;
     background-color: #f8f6f3;
     display: flex;
@@ -174,5 +174,249 @@
     justify-content: center;
 }
 .about-header-img{
-   margin-top: -20px;
+   margin-top: -80px;
+}
+
+.contact-info{
+    height: 310px;
+    width: 1200px;
+    background-color: #FFFFFF;
+    margin-left: 140px;
+    margin-top: -50px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-info-details{
+    height: 150px;
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.fa-phone{
+    color: #8bc34a;
+    padding-bottom: 25px;
+}
+
+.fa-envelope{
+    color: #8bc34a;
+    padding-bottom: 25px;
+}
+
+.fa-location-dot{
+    color: #8bc34a;
+    padding-bottom: 25px;
+}
+
+.contact-info-details-para{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.frequently-asked-questions{
+    height: 450px;
+    width: 100%;
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.frequently-asked-questions-head{
+    font-size: 34px;
+    color: #111111;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 600;
+}
+
+.question-no{
+    display: flex;
+    gap: 50px;
+}
+
+.questions1{
+    height: 800px;
+    width: 500px;
+    /* background-color: #f8f6f3; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.question{
+    cursor: pointer;
+    width: 500px;
+    height: 50px;
+}
+
+.que-arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.que-arrow-para{
+    margin-left: 30px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.fa-caret-right{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.question-underline{
+    margin-top: 17px;
+    border-bottom: 0.25px ridge slategrey;
+    cursor: pointer;
+}
+
+.leaf-img{
+    margin-left : 1080px;
+    margin-top: -900px;
+    opacity: .1;
+    z-index: -1;
+}
+
+.footer{
+    /* margin-top: 00px; */
+    height: 700px;
+    width: 100%;
+    background-color: #001524;
+    margin-top: 30px;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+
+.footer-content{
+    display: flex;
+    gap: 180px;
+    margin-left: 100px;
+}
+
+.footer-img{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.footer-para{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-left: -2px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 2px;
+}
+
+.Links{
+    margin-top: 80px;
+}
+
+.link-head{
+    font-size: 22px;
+    font-family: 'Merriweather', sans-serif;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.link-para{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-bottom: 3px;
+}
+
+.link-head-2{
+    font-size: 22px;
+    font-family: 'Merriweather', sans-serif;
+    color: #ffffff;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.additional-info{
+    margin-top: 80px;
+}
+
+.link-head1{
+    font-size: 22px;
+    font-family: 'Merriweather', sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.link-para1{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-bottom: 3px;
+}
+
+.link-para-1{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-bottom: 3px;
+    color: #8bc34a;
+}
+
+.app-info{
+    margin-top: 15px;
+}
+
+.footer-line{
+    height: 1px;
+    width: 100%;
+    background-color: #424242;
+    margin-top: 80px;
+}
+
+.copyright-para{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffffA8;
+    margin-left: 150px;
+}
+
+.copyright{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.fa-facebook{
+    color: #ffffffA8;
+    margin-right: 20px;
+}
+
+.fa-twitter{
+    color: #ffffffA8;
+    margin-right: 20px;
+}
+
+.fa-instagram{
+    color: #ffffffA8;
+}
+
+.copyright-icons{
+    margin-left: 800px;
 }
