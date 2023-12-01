@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #f0f0f1;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -35px;
+}
+
+.logoimg{
+    margin-bottom: 15px;
+}
+
+.form-container{
+    height: 420px;
+    width: 350px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.form-container-para{
+    color: #111111;
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.form-container-para-1{
+    color: #111111;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#form-container-email{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #333333;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+}
+
+.btn{
+    width: 300px;
+    background-color: #ffc022;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.paras{
+    width: 300px;
+    margin-top: 15px;
+}
+
+.paras-para{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+}
+
+.new{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.line{
+    height: 1px;
+    background-color: #333333;
+    width: 95px;
+}
+
+.new-para{
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+}
+
+.btn-1{
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-para-1{
+    color: #111111;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
