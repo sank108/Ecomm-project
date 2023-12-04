@@ -220,21 +220,37 @@
     margin-bottom: 20px;
 }
 
+
+
 .slider{
-    width: 250px;
-    height: 2px;
+    height: 3px;
+    width: 200px;
+    background: gray;
     border-radius: 5px;
-    background-color: black;
     position: relative;
+    overflow: hidden;
+    /* margin-left: 100px; */
 }
 
-.progress{
-    width: 250px;
-    height: 3px;
+.slider .progress1{
+    height: 5px;
+    width: 200px;
+    background-color: gray ;
     border-radius: 5px;
-    background-color: #8bc34a;
     position: absolute;
+    margin-left: -200px;
+    z-index: 2;
 }
+
+.slider .progress2{
+    height: 5px;
+    width: 200px;
+    background-color: #8bc34a;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 200px;
+}
+
 
 .range-input{
     position: relative;
@@ -242,34 +258,37 @@
 
 .range-input input{
     position: absolute;
-    top: -10px;
-    width: 250px;
+    top: -4px;
+    height: 5px;
+    width: 200px;
+    /* left: -100px; */
     background: none;
-    -webkit-appearance: none;
     pointer-events: none;
+    -webkit-appearance: none;
+    z-index: 3;
 }
 
 input[type="range"]::-webkit-slider-thumb{
-    height: 15px;
-    width: 15px;
+    height: 17px;
+    width: 17px;
     border-radius: 50%;
-    margin-top: 2px;
     pointer-events: auto;
+    background-color: yellowgreen;
     -webkit-appearance: none;
-    background: #8bc34a;
-    cursor: pointer;
+    /* z-index: 11; */
+    z-index: 3;
 }
 
 input[type="range"]::-moz-range-thumb{
-    height: 15px;
-    width: 15px;
-    border-radius: 50px;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
     pointer-events: auto;
+    background-color: yellowgreen;
     -moz-appearance: none;
-    background: #8bc34a;
     border: none;
+    /* z-index: 11; */
 }
-
 .price-range{
     display: flex;
     margin-left: 120px;
