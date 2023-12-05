@@ -51,6 +51,16 @@
                     </div>
     
                     <div class="shop-product-range">
+
+                        <div class="active-filter">
+                            <h2 class="head-active-filter">Active filters</h2>
+                            <p class="para-active-filter">PRICE:</p>
+                            <div class="specific-price">
+                                <i class="fa-solid fa-circle-xmark" style="color: #e2dadd;"></i>
+                                <p class="specific-price-para">No Filter Applied</p>
+                            </div>
+
+                        </div>
                         <h2 class="shop-head">Filter by price</h2>
     
                         <div class="slider">
@@ -58,17 +68,21 @@
                             <div class="progress2"></div>
                         </div>
                         <div class="range-input">
-                            <input type="range" class="range-min" min="0" max="40" value="0">
-                            <input type="range" class="range-max" min="0" max="40" value="40">
+                            <input type="range" class="range-min" min="0" max="40" value="0" id="minmax">
+                            <input type="range" class="range-max" min="0" max="40" value="40" id="minmax">
                         </div>
     
                         <div class="price-range">
                             <div class="min-range">
-                                <input type="text" value="£10" readonly>
+                                <input type="text" value="£0" readonly>
                             </div>
                             <div class="max-range">
                                 <input type="text" id="max-range-1" value="£40" readonly>
                             </div>
+                        </div>
+
+                        <div class="clr-btn">
+                            RESET
                         </div>
     
                         <div class="side-info">

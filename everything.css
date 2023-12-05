@@ -218,18 +218,78 @@
     font-size: 24px;
     color: #111111;
     margin-bottom: 20px;
+    margin-top: -60px;
 }
 
+.active-filter{
+    height: 180px;
+    width: 240px;
+    display: block;
+}
 
+.head-active-filter{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 8px;
+
+}
+
+.para-active-filter{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.specific-price{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.specific-price-para{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+.clr-btn{
+    height: 50px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: #6a9739;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 130px;
+    margin-top: 20px;
+    transform: 2s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.clr-btn:hover{
+    background-color: #8bc34a;
+}
+.active{
+    display: block;
+}
 
 .slider{
     height: 3px;
     width: 200px;
-    background: gray;
+    background-color: gray;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
     /* margin-left: 100px; */
+    /* z-index: 1000; */
 }
 
 .slider .progress1{
@@ -319,7 +379,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .side-info{
-    margin-top: 70px;
+    margin-top: 30px;
     margin-left: 10px;
     height: 1400px;
     width: 300px;
