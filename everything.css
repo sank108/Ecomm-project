@@ -545,13 +545,126 @@ input[type="range"]::-moz-range-thumb{
     grid-template-rows: 430px 430px 430px;
     grid-template-columns: 300px 300px 300px;
 }
-.shop-list-items-img{
+.shop-list-items-img-Assorted-coffee{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.shop-list-items-img-Cashew-Butter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-list-items-img-Diabetic-Cookies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-list-items-img-Farm-Fresh-Eggs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-list-items-img-Fresh-Orange-Juice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-list-items-img-Fresh-Organic-Honey{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-list-items-img-Hand-Sanitizer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-list-items-img-Handpicked-Red-Chillies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-list-items-img-Natural-Extracted-Edible-Oil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.shop-list-items-img-Pulses-From-Organic-Farm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.shop-list-items-img-Organic-Face-Scrub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.shop-list-items-img-Wheat-From-Organic-Farms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.noproduct{
+    display: none;
+}
+
+.noproduct-line{
+    height: 2px;
+    width: 880px;
+    background-color: #8bc34a;
+    margin-top: 50px;
+}
+
+.noproduct-div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.noproduct-para{
+    font-size: 18px;
+    color: #515151;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.inactive{
+    display: none;
+}
+
+.active{
+    display: block;
+}
 .shop-list-items-category{
     font-size: 13.65px;
     font-family: 'Open Sans', sans-serif;
@@ -652,7 +765,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .footer{
-    margin-top: 50px;
+    margin-top: 70px;
     height: 700px;
     width: 100%;
     background-color: #001524;

@@ -7,6 +7,18 @@ const priceInput = document.querySelectorAll(".price-range input");
 const activeFilter = document.querySelector(".active-filter");
 const pricepara = document.querySelector(".specific-price-para");
 const clear = document.querySelector(".clr-btn");
+const extractedoil = document.querySelector(".shop-list-items-img-Natural-Extracted-Edible-Oil");
+const Assortedcoffee = document.querySelector(".shop-list-items-img-Assorted-coffee");
+const CashewButter = document.querySelector(".shop-list-items-img-Cashew-Butter");
+const DiabeticCookies = document.querySelector(".shop-list-items-img-Diabetic-Cookies");
+const FarmFreshEggs = document.querySelector(".shop-list-items-img-Farm-Fresh-Eggs");
+const FreshOrangeJuice = document.querySelector(".shop-list-items-img-Fresh-Orange-Juice");
+const FreshOrganicHoney = document.querySelector(".shop-list-items-img-Fresh-Organic-Honey");
+const HandSanitizer = document.querySelector(".shop-list-items-img-Hand-Sanitizer");
+const HandpickedRedChillies = document.querySelector(".shop-list-items-img-Handpicked-Red-Chillies");
+const noproduct = document.querySelector(".noproduct");
+const nopara = document.querySelector(".search-results-para1");
+const searchlist = document.querySelector(".search-list");
 
 let priceGap = 10;
 // 
@@ -56,10 +68,158 @@ let maxVal;
             }
             
             
+            
             // let pro = (maxVal / rangeInput[1].max) *100 + "%";
             // console.log(pro);
     
             // console.log(,priceInput[1].value);
+
+
+            var products = [
+                {
+                    productName:"shop-list-items-img-Natural-Extracted-Edible-Oil",
+                    price:25
+                },
+                {
+                    productName:"shop-list-items-img-Assorted-coffee",
+                    price:35
+                },
+                {
+                    productName:"shop-list-items-img-Cashew-Butter",
+                    price:25
+                },
+                {
+                    productName:"shop-list-items-img-Diabetic-Cookies",
+                    price:25
+                },
+                {
+                    productName:"shop-list-items-img-Farm-Fresh-Eggs",
+                    price:34
+                },
+                {
+                    productName:"shop-list-items-img-Fresh-Orange-Juice",
+                    price:18
+                },
+                {
+                    productName:"shop-list-items-img-Fresh-Organic-Honey",
+                    price:34
+                },
+                {
+                    productName:"shop-list-items-img-Hand-Sanitizer",
+                    price:15
+                },
+                {
+                    productName:"shop-list-items-img-Handpicked-Red-Chillies",
+                    price:19
+                },
+                {
+                    productName:"shop-list-items-img-Organic-Face-Scrub",
+                    price:35
+                },
+                {
+                    productName:"shop-list-items-img-Pulses-From-Organic-Farm",
+                    price:15
+                },
+                {
+                    productName:"shop-list-items-img-Wheat-From-Organic-Farms",
+                    price:34
+                },
+
+            ];
+            
+            
+            var ans = [{
+                productName:"shop-list-items-img-Natural-Extracted-Edible-Oil",
+                price:25
+            },
+            {
+                productName:"shop-list-items-img-Assorted-coffee",
+                price:35
+            },
+            {
+                productName:"shop-list-items-img-Cashew-Butter",
+                price:25
+            },
+            {
+                productName:"shop-list-items-img-Diabetic-Cookies",
+                price:25
+            },
+            {
+                productName:"shop-list-items-img-Farm-Fresh-Eggs",
+                price:34
+            },
+            {
+                productName:"shop-list-items-img-Fresh-Orange-Juice",
+                price:18
+            },
+            {
+                productName:"shop-list-items-img-Fresh-Organic-Honey",
+                price:34
+            },
+            {
+                productName:"shop-list-items-img-Hand-Sanitizer",
+                price:15
+            },
+            {
+                productName:"shop-list-items-img-Handpicked-Red-Chillies",
+                price:19
+            },
+            {
+                productName:"shop-list-items-img-Organic-Face-Scrub",
+                price:35
+            },
+            {
+                productName:"shop-list-items-img-Pulses-From-Organic-Farm",
+                price:15
+            },
+            {
+                productName:"shop-list-items-img-Wheat-From-Organic-Farms",
+                price:34
+            },
+        ];
+            products.forEach(product =>{
+                
+                    // product.productName.classList.add("inactive");
+                    // console.log(product.productName);
+                    // let pro = product.productName;
+                    // pro.classList.add("inactive");
+
+                    let element = document.querySelector("." + product.productName);
+                    // Check the condition and add the class
+                    console.log(product.price);
+                    if(product.price <= minVal || product.price >= maxVal) {
+                        ans.pop(product.productName);
+                        element.classList.add("inactive");
+                        if(ans.length == 0){
+                            noproduct.classList.add("active");
+                            nopara.classList.add("inactive");
+                            searchlist.classList.add("inactive");
+                        }
+                        
+                    }else if(product.price >= minVal || product.price <= maxVal+1){
+                        ans.push(product.productName);
+                        element.classList.remove("inactive");
+                        if(ans.length > 0){
+                            noproduct.classList.remove("active");
+                            nopara.classList.remove("inactive");
+                            searchlist.classList.remove("inactive");
+                        }
+                        
+                    }
+
+                    console.log(ans.length);
+                   
+                    
+            })
+
+            // if(ans.length == 0){
+            //     noproduct.classList.add("active");
+            //     nopara.classList.add("inactive");
+            // }
+            // }else{
+            //     noproduct.classList.add("inactive");
+            //     nopara.classList.add("active");
+            // }
             
         });
     });
@@ -95,6 +255,66 @@ clear.addEventListener("click",(e) =>{
         progress1.style.left = 0;
         pricepara.textContent = "No Filter Applied";
     }
+
+    var products = [
+        {
+            productName:"shop-list-items-img-Natural-Extracted-Edible-Oil",
+            price:25
+        },
+        {
+            productName:"shop-list-items-img-Assorted-coffee",
+            price:35
+        },
+        {
+            productName:"shop-list-items-img-Cashew-Butter",
+            price:25
+        },
+        {
+            productName:"shop-list-items-img-Diabetic-Cookies",
+            price:25
+        },
+        {
+            productName:"shop-list-items-img-Farm-Fresh-Eggs",
+            price:34
+        },
+        {
+            productName:"shop-list-items-img-Fresh-Orange-Juice",
+            price:18
+        },
+        {
+            productName:"shop-list-items-img-Fresh-Organic-Honey",
+            price:34
+        },
+        {
+            productName:"shop-list-items-img-Hand-Sanitizer",
+            price:15
+        },
+        {
+            productName:"shop-list-items-img-Handpicked-Red-Chillies",
+            price:19
+        }
+
+    ];
+    
+    
+     
+    products.forEach(product =>{
+        
+            // product.productName.classList.add("inactive");
+            // console.log(product.productName);
+            // let pro = product.productName;
+            // pro.classList.add("inactive");
+
+            let element = document.querySelector("." + product.productName);
+            // Check the condition and add the class
+            console.log(product.price);
+            if(element.classList == "inactive") {
+                element.classList.add("inactive");
+            }else{
+                element.classList.remove("inactive");
+            }
+    
+    })
 })
 
 
