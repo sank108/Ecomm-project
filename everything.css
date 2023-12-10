@@ -337,6 +337,7 @@ input[type="range"]::-webkit-slider-thumb{
     -webkit-appearance: none;
     /* z-index: 11; */
     z-index: 3;
+    cursor: pointer;
 }
 
 input[type="range"]::-moz-range-thumb{
@@ -542,8 +543,11 @@ input[type="range"]::-moz-range-thumb{
 .shop-list-items{
     margin-top: 50px;
     display: grid;
-    grid-template-rows: 430px 430px 430px;
-    grid-template-columns: 300px 300px 300px;
+    /* grid-template-rows: 430px 430px 430px;
+    grid-template-columns: 300px 300px 300px; */
+    grid-template-columns: repeat(3, 1fr); /* Three columns for each row */
+    gap: 20px;
+    margin-bottom: 100px;
 }
 .shop-list-items-img-Assorted-coffee{
     display: flex;
@@ -606,7 +610,7 @@ input[type="range"]::-moz-range-thumb{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 .shop-list-items-img-Pulses-From-Organic-Farm{
@@ -614,7 +618,7 @@ input[type="range"]::-moz-range-thumb{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: none;
+    /* display: none; */
 }
 
 .shop-list-items-img-Organic-Face-Scrub{
@@ -622,7 +626,7 @@ input[type="range"]::-moz-range-thumb{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: none;
+    /* display: none; */
 }
 
 .shop-list-items-img-Wheat-From-Organic-Farms{
@@ -630,7 +634,7 @@ input[type="range"]::-moz-range-thumb{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: none;
+    /* display: none; */
 }
 
 .noproduct{
@@ -680,6 +684,13 @@ input[type="range"]::-moz-range-thumb{
     margin-bottom: 5px;
 }
 
+.shop-list-items-name-Assorted{
+    font-size: 16px;
+    font-family: 'Merriweather', sans-serif;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
 .shop-list-items-price{
     font-size: 14.4px;
     font-family: 'Open Sans', sans-serif;
@@ -697,6 +708,11 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .shop-list-items-img-para{
+    gap: 5px;
+}
+
+.shop-list-items-img-para-extracted-oil{
+    display: none;
     gap: 5px;
 }
 

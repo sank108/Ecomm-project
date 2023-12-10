@@ -19,8 +19,15 @@ const HandpickedRedChillies = document.querySelector(".shop-list-items-img-Handp
 const noproduct = document.querySelector(".noproduct");
 const nopara = document.querySelector(".search-results-para1");
 const searchlist = document.querySelector(".search-list");
+const OrganicFaceScrub = document.querySelector(".shop-list-items-img-Organic-Face-Scrub");
+const PulsesFromOrganicFarm = document.querySelector(".shop-list-items-img-Pulses-From-Organic-Farm");
+const WheatFromOrganicFarms = document.querySelector(".shop-list-items-img-Wheat-From-Organic-Farms");
+// const selectBox = document.querySelector("#sort");
+const griditems = document.querySelector(".shop-list-items");
+const asimg = document.querySelector(".Assortedcoffee-img");
 
 let priceGap = 10;
+// asimg.src = "https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/cashew-butter-500-300x300.jpg";
 // 
 let minVal;
 let maxVal;
@@ -203,11 +210,13 @@ let maxVal;
                             noproduct.classList.remove("active");
                             nopara.classList.remove("inactive");
                             searchlist.classList.remove("inactive");
+                            
+                            
                         }
                         
                     }
 
-                    console.log(ans.length);
+                    // console.log(ans.length);
                    
                     
             })
@@ -313,8 +322,284 @@ clear.addEventListener("click",(e) =>{
             }else{
                 element.classList.remove("inactive");
             }
+
+            
+        
+    
+      // Get the selected index
+      
     
     })
 })
 
+var selectBox = document.getElementById("sort");
 
+console.log(selectBox.value);
+
+var pro = [
+    {
+        name:"shop-list-items-img-Organic-Face-Scrub",
+    },
+    {
+        name:"shop-list-items-img-Pulses-From-Organic-Farm",
+    },
+    {
+        name:"shop-list-items-img-Wheat-From-Organic-Farms",
+    }
+]
+
+
+pro.forEach(p =>{
+    let item = griditems.querySelector("." + p.name);
+    item.classList.add("inactive");
+})
+
+
+
+
+
+function checkSelectedOption() {
+    // Get the select element
+    var griditem1 = document.querySelector(".shop-list-items-img-Assorted-coffee");
+    var griditem2 = document.querySelector(".shop-list-items-img-Cashew-Butter");
+    var griditem3 = document.querySelector(".shop-list-items-img-Diabetic-Cookies");
+    var griditem4 = document.querySelector(".shop-list-items-img-Farm-Fresh-Eggs");
+    var griditem5 = document.querySelector(".shop-list-items-img-Fresh-Orange-Juice");
+    var griditem6 = document.querySelector(".shop-list-items-img-Fresh-Organic-Honey");
+    var griditem7 = document.querySelector(".shop-list-items-img-Hand-Sanitizer");
+    var griditem8 = document.querySelector(".shop-list-items-img-Handpicked-Red-Chillies");
+    var griditem9 = document.querySelector(".shop-list-items-img-Natural-Extracted-Edible-Oil");
+    var griditem10 = document.querySelector(".shop-list-items-img-Organic-Face-Scrub");
+    var griditem11 = document.querySelector(".shop-list-items-img-Pulses-From-Organic-Farm");
+    var griditem12 = document.querySelector(".shop-list-items-img-Wheat-From-Organic-Farms");
+
+    if(selectBox.value === "Default sorting"){
+        griditem11.classList.remove("inactive");
+        griditem12.classList.remove("inactive");
+        griditem1.classList.remove("inactive");
+        griditem2.classList.remove("inactive");
+        griditem3.classList.remove("inactive");
+        griditem4.classList.remove("inactive");
+        griditem5.classList.remove("inactive");
+        griditem6.classList.remove("inactive");
+        griditem7.classList.remove("inactive");
+        griditem8.classList.remove("inactive");
+        griditem9.classList.remove("inactive");
+        griditem10.classList.remove("inactive");
+
+        griditem1.style.order = 0;
+        griditem2.style.order = 1;
+        griditem3.style.order = 2;
+        griditem4.style.order = 3;
+        griditem5.style.order = 4;
+        griditem6.style.order = 5;
+        griditem7.style.order = 6;
+        griditem8.style.order = 7;
+        griditem9.style.order = 8;
+
+        griditem11.classList.add("inactive");
+        griditem12.classList.add("inactive");
+        griditem10.classList.add("inactive");
+    }
+    else if(selectBox.value === "Sort by popularity"){
+
+        griditem11.classList.remove("inactive");
+        griditem12.classList.remove("inactive");
+        griditem9.style.order = 0;
+        griditem7.style.order = 1;
+        griditem12.style.order = 2;
+        griditem1.style.order = 3;
+        griditem8.style.order = 4;
+        griditem11.style.order = 5;
+        griditem5.style.order = 6;
+        griditem2.style.order = 7;
+        griditem6.style.order = 8;
+
+        griditem3.classList.add("inactive");
+        griditem4.classList.add("inactive");
+
+        
+        
+
+    }else if(selectBox.value === "Sort by average rating"){
+        griditem11.classList.remove("inactive");
+        griditem12.classList.remove("inactive");
+        griditem1.classList.remove("inactive");
+        griditem2.classList.remove("inactive");
+        griditem3.classList.remove("inactive");
+        griditem4.classList.remove("inactive");
+        griditem5.classList.remove("inactive");
+        griditem6.classList.remove("inactive");
+        griditem7.classList.remove("inactive");
+        griditem8.classList.remove("inactive");
+        griditem9.classList.remove("inactive");
+        griditem10.classList.remove("inactive");
+       
+        
+
+        griditem8.style.order = 0;
+        griditem11.style.order = 1;
+        griditem5.style.order = 2;
+        griditem7.style.order = 3;
+        griditem7.style.order = 4;
+        griditem4.style.order = 5;
+        griditem6.style.order = 6;
+        griditem9.style.order = 7;
+        griditem1.style.order = 8;
+        griditem12.style.order = 9;
+        griditem3.classList.add("inactive");
+        griditem2.classList.add("inactive");
+        griditem10.classList.add("inactive");
+
+    }else if(selectBox.value === "Sort by latest"){
+        griditem11.classList.remove("inactive");
+        griditem12.classList.remove("inactive");
+        griditem1.classList.remove("inactive");
+        griditem2.classList.remove("inactive");
+        griditem3.classList.remove("inactive");
+        griditem4.classList.remove("inactive");
+        griditem5.classList.remove("inactive");
+        griditem6.classList.remove("inactive");
+        griditem7.classList.remove("inactive");
+        griditem8.classList.remove("inactive");
+        griditem9.classList.remove("inactive");
+        griditem10.classList.remove("inactive");
+        griditem8.style.order = 0;
+        griditem11.style.order = 1;
+        griditem5.style.order = 2;
+        griditem7.style.order = 3;
+        griditem7.style.order = 4;
+        griditem4.style.order = 5;
+        griditem6.style.order = 6;
+        griditem9.style.order = 7;
+        griditem1.style.order = 8;
+        griditem12.style.order = 9;
+        griditem3.classList.add("inactive");
+        griditem2.classList.add("inactive");
+
+    }else if (selectBox.value === "Sort by price:low to high") {
+        
+        console.log(selectBox.value);
+        griditem11.classList.remove("inactive");
+        griditem12.classList.remove("inactive");
+        griditem1.classList.remove("inactive");
+        griditem2.classList.remove("inactive");
+        griditem3.classList.remove("inactive");
+        griditem4.classList.remove("inactive");
+        griditem5.classList.remove("inactive");
+        griditem6.classList.remove("inactive");
+        griditem7.classList.remove("inactive");
+        griditem8.classList.remove("inactive");
+        griditem9.classList.remove("inactive");
+        griditem10.classList.remove("inactive");
+        griditem7.style.order = 0;
+        griditem11.style.order = 1;
+        griditem5.style.order = 2;
+        griditem8.style.order = 3;
+        griditem2.style.order = 4;
+        griditem3.style.order = 5;
+        griditem9.style.order = 6;
+        griditem12.style.order = 7;
+        griditem6.style.order = 8;
+        griditem1.classList.add("inactive");
+        griditem4.classList.add("inactive");
+        griditem10.classList.add("inactive");
+    }else if (selectBox.value === "Sort by price:high to low") {
+        
+        
+        griditem11.classList.remove("inactive");
+        griditem12.classList.remove("inactive");
+        griditem1.classList.remove("inactive");
+        griditem2.classList.remove("inactive");
+        griditem3.classList.remove("inactive");
+        griditem4.classList.remove("inactive");
+        griditem5.classList.remove("inactive");
+        griditem6.classList.remove("inactive");
+        griditem7.classList.remove("inactive");
+        griditem8.classList.remove("inactive");
+        griditem9.classList.remove("inactive");
+        griditem10.classList.remove("inactive");
+        griditem1.style.order = 0;
+        griditem10.style.order = 1;
+        griditem4.style.order = 2;
+        griditem6.style.order = 3;
+        griditem12.style.order = 4;
+        griditem9.style.order = 5;
+        griditem3.style.order = 6;
+        griditem2.style.order = 7;
+        griditem8.style.order = 8;
+        griditem11.classList.add("inactive");
+        griditem7.classList.add("inactive");
+        griditem5.classList.add("inactive");
+    }
+}
+
+// griditems[1].src = "https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/diabetic-cookies-300x300.jpg";
+// const item = 
+
+// var imgas = item.querySelector(".Assortedcoffeeimg");
+// console.log(item.querySelector(".Assortedcoffeeimg"));
+// imgas.src = "https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/red-chillies-300x300.jpg";
+
+
+const img1 = document.querySelector(".Assortedcoffeeimg");
+const img2 = document.querySelector(".CashewButterimg");
+const img3 = document.querySelector(".Diabetic");
+const img4 = document.querySelector(".Farm");
+const img5 = document.querySelector(".FreshOrangeJuice");
+const img6 = document.querySelector(".FreshOrganicHoney");
+const img7 = document.querySelector(".Hand");
+const img8 = document.querySelector(".Handpicked");
+const img9 = document.querySelector(".Edible");
+const img10 = document.querySelector(".Organic");
+const img11 = document.querySelector(".Pulses");
+const img12 = document.querySelector(".Wheat");
+
+
+img1.addEventListener("click",function() {
+    selectBox.options[0].selected = true;
+})
+
+img2.addEventListener("click",function() {
+    selectBox.options[0].selected = true;
+})
+
+img3.addEventListener("click",function() {
+    selectBox.options[0].selected = true;
+})
+
+img4.addEventListener("click",function() {
+    selectBox.options[0].selected = true;
+})
+
+img5.addEventListener("click",function() {
+    selectBox.options[0].selected = true;
+})
+
+img6.addEventListener("click",function() {
+    selectBox.options[0].selected = true;
+})
+
+img7.addEventListener("click",function() {
+    selectBox.options[0].selected = true;
+})
+
+img8.addEventListener("click",function() {
+    selectBox.options[0].selected = true;
+})
+
+img9.addEventListener("click",function() {
+    selectBox.options[0].selected = true;
+})
+
+img10.addEventListener("click",function() {
+    selectBox.options[0].selected = true;
+})
+
+img11.addEventListener("click",function() {
+    selectBox.options[0].selected = true;
+})
+
+img12.addEventListener("click",function() {
+    selectBox.options[0].selected = true;
+})
