@@ -25,6 +25,16 @@ const WheatFromOrganicFarms = document.querySelector(".shop-list-items-img-Wheat
 // const selectBox = document.querySelector("#sort");
 const griditems = document.querySelector(".shop-list-items");
 const asimg = document.querySelector(".Assortedcoffee-img");
+const shopinput = document.querySelector("#shop-input");
+const searchproductsbtn = document.querySelector(".search-products-btn");
+const trial = document.querySelector("#trial");
+const searchoption = document.querySelector("#searchoption");
+const headpara = document.querySelector(".shop-list-header-para1");
+const head = document.querySelector(".shop-list-heading");
+
+
+searchoption.classList.add("inactive");
+
 
 let priceGap = 10;
 // asimg.src = "https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/cashew-butter-500-300x300.jpg";
@@ -263,6 +273,12 @@ clear.addEventListener("click",(e) =>{
         progress.style.left = 0;
         progress1.style.left = 0;
         pricepara.textContent = "No Filter Applied";
+        shopinput.value = "";
+        selectBox.options[0].selected = true;
+        searchoption.classList.add("inactive");
+        headpara.innerHTML = "Home / Shop";
+        head.innerHTML = "Shop";
+        nopara.innerHTML = "Showing 1–9 of 12 results";
     }
 
     var products = [
@@ -372,6 +388,13 @@ function checkSelectedOption() {
     var griditem10 = document.querySelector(".shop-list-items-img-Organic-Face-Scrub");
     var griditem11 = document.querySelector(".shop-list-items-img-Pulses-From-Organic-Farm");
     var griditem12 = document.querySelector(".shop-list-items-img-Wheat-From-Organic-Farms");
+
+    if(selectBox.value !== "search"){
+        searchoption.classList.add("inactive");
+        headpara.innerHTML = "Home / Shop";
+        head.innerHTML = "Shop";
+        nopara.innerHTML = "Showing 1–9 of 12 results";
+    }
 
     if(selectBox.value === "Default sorting"){
         griditem11.classList.remove("inactive");
@@ -603,3 +626,114 @@ img11.addEventListener("click",function() {
 img12.addEventListener("click",function() {
     selectBox.options[0].selected = true;
 })
+
+function searchvalues() {
+
+    var inputvalue = shopinput.value;
+
+    inputvalue = inputvalue.charAt(0).toUpperCase() + inputvalue.slice(1);
+    console.log(inputvalue);
+    
+    var productname = [
+        {
+            productName:"shop-list-items-img-Natural-Extracted-Edible-Oil",
+            
+        },
+        {
+            productName:"shop-list-items-img-Assorted-coffee",
+            
+        },
+        {
+            productName:"shop-list-items-img-Cashew-Butter",
+            
+        },
+        {
+            productName:"shop-list-items-img-Diabetic-Cookies",
+            
+        },
+        {
+            productName:"shop-list-items-img-Farm-Fresh-Eggs",
+            
+        },
+        {
+            productName:"shop-list-items-img-Fresh-Orange-Juice",
+            
+        },
+        {
+            productName:"shop-list-items-img-Fresh-Organic-Honey",
+            
+        },
+        {
+            productName:"shop-list-items-img-Hand-Sanitizer",
+            
+        },
+        {
+            productName:"shop-list-items-img-Handpicked-Red-Chillies",
+            
+        },
+        {
+            productName:"shop-list-items-img-Organic-Face-Scrub",
+        },
+        {
+            productName:"shop-list-items-img-Pulses-From-Organic-Farm",
+        },
+        {
+            productName:"shop-list-items-img-Wheat-From-Organic-Farms",
+        }
+    ]
+
+    let input1 = document.querySelector(".shop-list-items-img-Natural-Extracted-Edible-Oil");
+    let input2 = document.querySelector(".shop-list-items-img-Assorted-coffee");
+    let input3 = document.querySelector(".shop-list-items-img-Cashew-Butter");
+    let input4 = document.querySelector(".shop-list-items-img-Diabetic-Cookies");
+    let input5 = document.querySelector(".shop-list-items-img-Farm-Fresh-Eggs");
+    let input6 = document.querySelector(".shop-list-items-img-Fresh-Orange-Juice");
+    let input7 = document.querySelector(".shop-list-items-img-Fresh-Organic-Honey");
+    let input8 = document.querySelector(".shop-list-items-img-Hand-Sanitizer");
+    let input9 = document.querySelector(".shop-list-items-img-Handpicked-Red-Chillies");
+    let input10 = document.querySelector(".shop-list-items-img-Organic-Face-Scrub");
+    let input11 = document.querySelector(".shop-list-items-img-Pulses-From-Organic-Farm");
+    let input12 = document.querySelector(".shop-list-items-img-Wheat-From-Organic-Farms");
+
+    input1.classList.add("inactive");
+    input2.classList.add("inactive");
+    input3.classList.add("inactive");
+    input4.classList.add("inactive");
+    input5.classList.add("inactive");
+    input6.classList.add("inactive");
+    input7.classList.add("inactive");
+    input8.classList.add("inactive");
+    input9.classList.add("inactive");
+    input10.classList.add("inactive");
+    input11.classList.add("inactive");
+    input12.classList.add("inactive");
+
+    console.log(inputvalue);
+    let cnt = 0;
+    productname.forEach(p =>{
+        if(p.productName.includes(inputvalue)){
+            var element = document.querySelector("." + p.productName)
+           element.classList.remove("inactive");
+           cnt++;
+        }
+    })
+
+    nopara.innerHTML = "Showing all " + cnt + " results";
+
+
+
+    
+
+      // Create a new option element
+      
+
+      // Set the text and value of the option
+      searchoption.classList.remove("inactive");
+      selectBox.options[6].selected = true;
+
+
+    
+    headpara.innerHTML = "Home / Shop / Search results for " + "'" + inputvalue + "'";
+    head.innerHTML = "Search results: " + "'" + inputvalue + "'";
+}
+

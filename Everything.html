@@ -45,9 +45,10 @@
                 <div class="shop-2">
                     <div class="search-products">
                         <input type="text" placeholder="Search products..." id="shop-input">
-                        <div class="search-products-btn">
+                        <div class="search-products-btn" onclick="searchvalues()">
                             <i class="fa-solid fa-arrow-right"></i>
                         </div>
+                       
                     </div>
     
                     <div class="shop-product-range">
@@ -141,8 +142,8 @@
                 <div class="shop-list">
                     <div class="shop-list-head">
                         <div class="shop-list-header">
-                            <a href="Practice.html"><p class="shop-list-header-para1">Home  /</p></a>
-                            <p class="shop-list-header-para2">Shop</p>
+                            <p class="shop-list-header-para1"><a href="Practice.html" class="shop-list-header-para1">Home</a>  /  Shop</p></a>
+                            <p class="shop-list-header-para2"></p>
                         </div>
 
                         <div class="heading">
@@ -167,6 +168,7 @@
                                         <option value="Sort by latest">Sort by latest</option>
                                         <option value="Sort by price:low to high">Sort by price:low to high</option>
                                         <option value="Sort by price:high to low">Sort by price:high to low</option>
+                                        <option value="search" id="searchoption">Searched products</option>
                                     </select>
                                 </div>
                                 
