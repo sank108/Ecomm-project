@@ -29,6 +29,7 @@ const shopinput = document.querySelector("#shop-input");
 const headpara = document.querySelector(".shop-list-header-para1");
 const head = document.querySelector(".shop-list-heading");
 
+searchoption.classList.add("inactive");
 let priceGap = 10;
 // asimg.src = "https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/cashew-butter-500-300x300.jpg";
 // 
@@ -78,7 +79,11 @@ let maxVal;
             }
             
             
-            
+            searchoption.classList.add("inactive");
+            headpara.innerHTML = "Home / Shop";
+            head.innerHTML = "Shop";
+            nopara.innerHTML = "Showing 10-12 of 12 results";
+            shopinput.value = "";
             // let pro = (maxVal / rangeInput[1].max) *100 + "%";
             // console.log(pro);
     
@@ -201,7 +206,7 @@ clear.addEventListener("click",(e) =>{
         searchoption.classList.add("inactive");
         headpara.innerHTML = "Home / Shop";
         head.innerHTML = "Shop";
-        nopara.innerHTML = "Showing 1–9 of 12 results";
+        nopara.innerHTML = "Showing 10-12 of 12 results";
     }
 
     var products = [
@@ -284,12 +289,15 @@ function checkSelectedOption() {
         searchoption.classList.add("inactive");
         headpara.innerHTML = "Home / Shop";
         head.innerHTML = "Shop";
-        nopara.innerHTML = "Showing 1–9 of 12 results";
+        nopara.innerHTML = "Showing 10-12 of 12 results";
+        shopinput.value = "";
     }
 
     if(selectBox.value === "Default sorting"){
         
-
+        griditem10.classList.remove("inactive");
+        griditem11.classList.remove("inactive");
+        griditem12.classList.remove("inactive");
         
         griditem10.style.order = 0;
         griditem11.style.order = 1;
@@ -299,6 +307,10 @@ function checkSelectedOption() {
     }
     else if(selectBox.value === "Sort by popularity"){
 
+        griditem10.classList.remove("inactive");
+        griditem11.classList.remove("inactive");
+        griditem12.classList.remove("inactive");
+
         griditem10.style.order = 1;
         griditem11.style.order = 0;
         griditem12.style.order = 2;
@@ -307,21 +319,37 @@ function checkSelectedOption() {
         
 
     }else if(selectBox.value === "Sort by average rating"){
+
+        griditem10.classList.remove("inactive");
+        griditem11.classList.remove("inactive");
+        griditem12.classList.remove("inactive");
         griditem10.style.order = 1;
         griditem11.style.order = 2;
         griditem12.style.order = 0;
 
     }else if(selectBox.value === "Sort by latest"){
+
+        griditem10.classList.remove("inactive");
+        griditem11.classList.remove("inactive");
+        griditem12.classList.remove("inactive");
         griditem10.style.order = 2;
         griditem11.style.order = 1;
         griditem12.style.order = 0;
 
     }else if (selectBox.value === "Sort by price:low to high") {
+
+        griditem10.classList.remove("inactive");
+        griditem11.classList.remove("inactive");
+        griditem12.classList.remove("inactive");
         
         griditem10.style.order = 2;
         griditem11.style.order = 0;
         griditem12.style.order = 1;
     }else if (selectBox.value === "Sort by price:high to low") {
+
+        griditem10.classList.remove("inactive");
+        griditem11.classList.remove("inactive");
+        griditem12.classList.remove("inactive");
         
         
         griditem10.style.order = 0;

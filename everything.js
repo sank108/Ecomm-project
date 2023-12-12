@@ -84,6 +84,11 @@ let maxVal;
                 pricepara.textContent = "Between £" + minVal + " and £" + maxVal;
             }
             
+            searchoption.classList.add("inactive");
+            headpara.innerHTML = "Home / Shop";
+            head.innerHTML = "Shop";
+            nopara.innerHTML = "Showing 1–9 of 12 results";
+            shopinput.value = "";
             
             
             // let pro = (maxVal / rangeInput[1].max) *100 + "%";
@@ -394,6 +399,7 @@ function checkSelectedOption() {
         headpara.innerHTML = "Home / Shop";
         head.innerHTML = "Shop";
         nopara.innerHTML = "Showing 1–9 of 12 results";
+        shopinput.value = "";
     }
 
     if(selectBox.value === "Default sorting"){

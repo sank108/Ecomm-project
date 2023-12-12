@@ -45,31 +45,47 @@
                 <div class="shop-2">
                     <div class="search-products">
                         <input type="text" placeholder="Search products..." id="shop-input">
-                        <div class="search-products-btn">
+                        <div class="search-products-btn" onclick="searchvalues()">
                             <i class="fa-solid fa-arrow-right"></i>
                         </div>
                     </div>
     
                     <div class="shop-product-range">
+
+                        <div class="active-filter">
+                            <h2 class="head-active-filter">Active filters</h2>
+                            <p class="para-active-filter">PRICE:</p>
+                            <div class="specific-price">
+                                <i class="fa-solid fa-circle-xmark" style="color: #e2dadd;"></i>
+                                <p class="specific-price-para">No Filter Applied</p>
+                            </div>
+
+                        </div>
+
                         <h2 class="shop-head">Filter by price</h2>
     
                         <div class="slider">
-                            <div class="progress"></div>
+                            <div class="progress1"></div>
+                            <div class="progress2"></div>
                         </div>
                         <div class="range-input">
-                            <input type="range" class="range-min" min="10" max="40" value="10">
-                            <input type="range" class="range-max" min="10" max="40" value="40">
+                            <input type="range" class="range-min" min="0" max="40" value="0" id="minmax">
+                            <input type="range" class="range-max" min="0" max="40" value="40" id="minmax">
                         </div>
     
                         <div class="price-range">
                             <div class="min-range">
-                                <input type="text" value="£10" readonly>
+                                <input type="text" value="£0" readonly>
                             </div>
                             <div class="max-range">
                                 <input type="text" id="max-range-1" value="£40" readonly>
                             </div>
                         </div>
-    
+                        
+                        <div class="clr-btn">
+                            RESET
+                        </div>
+
                         <div class="side-info">
                             
                                 <div class="side-info-grocery">
@@ -79,7 +95,7 @@
                                 
                                 <div class="side-info-juice">
                                     <p class="Juice1">Juice</p>
-                                    <p class="Juice1-para">(8)</p>
+                                    <p class="Juice1-para">(9)</p>
                                 </div>
                                 
                                 <div class="side-info-img">
@@ -126,13 +142,15 @@
                 <div class="shop-list">
                     <div class="shop-list-head">
                         <div class="shop-list-header">
-                            <a href="Practice.html"><p class="shop-list-header-para1">Home  /</p></a>
-                            <p class="shop-list-header-para2">Grocerry</p>
+                            <p class="shop-list-header-para1"><a href="Practice.html" class="shop-list-header-para1">Home</a>  /  Grocceries</p></a>
+                            <!-- <p class="shop-list-header-para2">Grocerry</p> -->
                         </div>
 
                         <div class="heading">
                             <p class="shop-list-heading">Grocceries</p>
                         </div>
+
+
 
                         <div class="shop-list-head-para">
                             <p class="shop-list-head-para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim, velit et luctus interdum, est quam</p>
@@ -140,24 +158,33 @@
                             <p class="shop-list-head-para3">elementum metus ac dolor tincidunt, eu imperdiet nisi dictum.</p>
                         </div>
 
+                        <div class="noproduct">
+                            <div class="noproduct-line"></div>
+                            <div class="noproduct-div">
+                                <i class="fa-solid fa-clapperboard fa-lg" style="color: #4ca61c;"></i>
+                                <p class="noproduct-para">No products were found matching your selection.</p>
+                            </div>
+                        </div>
+
                         <div class="search-results">
                                 <p class="search-results-para1">Showing 1–9 of 10 results</p>
                                 
                                 <div class="search-list">
-                                    <select id="sort" name="sort">
+                                    <select id="sort" name="sort" onchange="checkSelectedOption()">
                                         <option value="Default sorting">Default sorting</option>
                                         <option value="Sort by popularity">Sort by popularity</option>
                                         <option value="Sort by average rating">Sort by average rating</option>
                                         <option value="Sort by latest">Sort by latest</option>
                                         <option value="Sort by price:low to high">Sort by price:low to high</option>
                                         <option value="Sort by price:high to low">Sort by price:high to low</option>
+                                        <option value="search" id="searchoption">Searched products</option>
                                     </select>
                                 </div>
                                 
                         </div>
 
                         <div class="shop-list-items">
-                            <div class="shop-list-items-img">
+                            <div class="shop-list-items-img-Assorted-coffee">
                                 <a href="Assortedcoffee.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/coffee-asorted-300x300.jpg"
                                 height="280" width="280"></a>
                                 <p class="shop-list-items-category">Grocceries</p>
@@ -172,7 +199,7 @@
                                 <p class="shop-list-items-price">£35.00</p>
                             </div>
 
-                            <div class="shop-list-items-img">
+                            <div class="shop-list-items-img-Cashew-Butter">
                                 <a href="CashewButter.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/cashew-butter-500-300x300.jpg"
                                 height="280" width="280"></a>
                                 <p class="shop-list-items-category">Grocceries</p>
@@ -192,7 +219,7 @@
                                 
                             </div>
 
-                            <div class="shop-list-items-img">
+                            <div class="shop-list-items-img-Diabetic-Cookies">
                                 <a href="dbcookies.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/diabetic-cookies-300x300.jpg"
                                 height="280" width="280"></a>
                                 <p class="shop-list-items-category">Grocceries</p>
@@ -210,37 +237,7 @@
                                 </div>
                             </div>
 
-                            <div class="shop-list-items-img">
-                                <a href="organicfacescrub.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/face-wash-300x300.jpg"
-                                height="280" width="280"></a>
-                                <p class="shop-list-items-category">Grocceries</p>
-                                <a href="organicfacescrub.html"><h3 class="shop-list-items-name">Organic Face Scrub</h3></a>
-                                <div class="rating">
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <p class="shop-list-items-price">£35.00</p>
-                            </div>
-
-                            <div class="shop-list-items-img">
-                                <a href="pulsesfromorganicfarm.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/pulses-300x300.jpg"
-                                height="280" width="280"></a>
-                                <p class="shop-list-items-category">Grocceries</p>
-                                <a href="pulsesfromorganicfarm.html"><h3 class="shop-list-items-name">Pulses From Organic Farm</h3></a>
-                                <div class="rating">
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <p class="shop-list-items-price">£15.00</p>
-                            </div>
-
-                            <div class="shop-list-items-img">
+                            <div class="shop-list-items-img-Fresh-Organic-Honey">
                                 <a href="freshhoney.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/organic-honey-300x300.jpg"
                                 height="280" width="280"></a>
                                 <p class="shop-list-items-category">Grocceries</p>
@@ -255,7 +252,7 @@
                                 <p class="shop-list-items-price">£34.00</p>
                             </div>
 
-                            <div class="shop-list-items-img">
+                            <div class="shop-list-items-img-Hand-Sanitizer">
                                 <a href="handsanitizer.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/sanitizer-300x300.jpg"
                                 height="280" width="280"></a>
                                 <p class="shop-list-items-category">Grocceries</p>
@@ -270,7 +267,7 @@
                                 <p class="shop-list-items-price">£15.00</p>
                             </div>
 
-                            <div class="shop-list-items-img">
+                            <div class="shop-list-items-img-Handpicked-Red-Chillies">
                                 <a href="redchillies.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/red-chillies-300x300.jpg"
                                 height="280" width="280"></a>
                                 <p class="shop-list-items-category">Grocceries</p>
@@ -285,7 +282,7 @@
                                 <p class="shop-list-items-price">£19.00</p>
                             </div>
 
-                            <div class="shop-list-items-img">
+                            <div class="shop-list-items-img-Natural-Extracted-Edible-Oil">
                                 <a href="extractedoil.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/edible-oil-300x300.jpg"
                                 height="280" width="280"></a>
                                 <p class="shop-list-items-category">Grocceries</p>
@@ -300,6 +297,56 @@
                                 <div class="shop-list-items-img-para">
                                     <s class="dash"><p class="shop-list-items-dicounted-price">£34.00</p></s>
                                     <p class="shop-list-items-price">£25.00</p>
+                                </div>
+                            </div>
+
+                            <div class="shop-list-items-img-Organic-Face-Scrub">
+                                <a href="organicfacescrub.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/face-wash-300x300.jpg"
+                                height="280" width="280"></a>
+                                <p class="shop-list-items-category">Grocceries</p>
+                                <a href="organicfacescrub.html"><h3 class="shop-list-items-name">Organic Face Scrub</h3></a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="shop-list-items-price">£35.00</p>
+                            </div>
+
+                            <div class="shop-list-items-img-Pulses-From-Organic-Farm">
+                                <a href="pulsesfromorganicfarm.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/pulses-300x300.jpg"
+                                height="280" width="280"></a>
+                                <p class="shop-list-items-category">Grocceries</p>
+                                <a href="pulsesfromorganicfarm.html"><h3 class="shop-list-items-name">Pulses From Organic Farm</h3></a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="shop-list-items-price">£15.00</p>
+                            </div>
+
+                            
+
+                            <div class="shop-list-items-img-Wheat-From-Organic-Farms">
+                                <a href="wheatfromorganicfarm.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/wheat-300x300.jpg"
+                                height="280" width="280" class="Wheat image"></a>
+                                <p class="shop-list-items-category">Grocceries</p>
+                                <a href="wheatfromorganicfarm.html"><h3 class="shop-list-items-name">Wheat From Organic Farms</h3></a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="shop-list-items-img-para">
+                                    <!-- <s class="dash"><p class="shop-list-items-dicounted-price">£35.00</p></s> -->
+                                    <p class="shop-list-items-price">£34.00</p>
                                 </div>
                             </div>
                         </div>
@@ -388,5 +435,7 @@
             </div>
         </div>
     </div>
+
+    <script src="grocerry.js"></script>
 </body>
 </html>
