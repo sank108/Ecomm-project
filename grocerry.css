@@ -610,49 +610,55 @@ input[type="range"]::-moz-range-thumb{
     justify-content: center;
 }
 
-#shop-list-items-img-Assorted-coffee{
+.shop-list-items-img-Wheat-From-Organic-Farms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-list-items-img-Assorted-coffee{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#shop-list-items-img-Cashew-Butter{
+.shop-list-items-img-Cashew-Butter{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#shop-list-items-img-Diabetic-Cookies{
+.shop-list-items-img-Diabetic-Cookies{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#shop-list-items-img-Fresh-Organic-Honey{
+.shop-list-items-img-Fresh-Organic-Honey{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#shop-list-items-img-Hand-Sanitizer{
+.shop-list-items-img-Hand-Sanitizer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#shop-list-items-img-Handpicked-Red-Chillies{
+.shop-list-items-img-Handpicked-Red-Chillies{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#shop-list-items-img-Natural-Extracted-Edible-Oil{
+.shop-list-items-img-Natural-Extracted-Edible-Oil{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -660,7 +666,7 @@ input[type="range"]::-moz-range-thumb{
     /* opacity: 1; */
 }
 
-#shop-list-items-img-Pulses-From-Organic-Farm{
+.shop-list-items-img-Pulses-From-Organic-Farm{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -668,7 +674,7 @@ input[type="range"]::-moz-range-thumb{
     /* display: none; */
 }
 
-#shop-list-items-img-Organic-Face-Scrub{
+.shop-list-items-img-Organic-Face-Scrub{
     display: flex;
     flex-direction: column;
     align-items: center;

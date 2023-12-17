@@ -78,11 +78,11 @@ let maxVal;
                 pricepara.textContent = "Between £" + minVal + " and £" + maxVal;
             }
 
-            searchoption.classList.add("inactive");
-            headpara.innerHTML = "Home / Grocceries";
-            head.innerHTML = "Grocceries";
-            nopara.innerHTML = "Showing 1–9 of 10 results";
-            shopinput.value = "";
+            // searchoption.classList.add("inactive");
+            // headpara.innerHTML = "Home / Grocceries";
+            // head.innerHTML = "Grocceries";
+            // nopara.innerHTML = "Showing 1–9 of 10 results";
+            // shopinput.value = "";
 
             var products = [
                 {
@@ -98,24 +98,20 @@ let maxVal;
                     price:25
                 },
                 {
+                    productName:"shop-list-items-img-Farm-Fresh-Eggs",
+                    price:34
+                },
+                {
+                    productName:"shop-list-items-img-Fresh-Orange-Juice",
+                    price:18
+                },
+                {
                     productName:"shop-list-items-img-Fresh-Organic-Honey",
                     price:35
                 },
                 {
-                    productName:"shop-list-items-img-Hand-Sanitizer",
-                    price:15
-                },
-                {
-                    productName:"shop-list-items-img-Handpicked-Red-Chillies",
-                    price:34
-                },
-                {
                     productName:"shop-list-items-img-Natural-Extracted-Edible-Oil",
                     price:15
-                },
-                {
-                    productName:"shop-list-items-img-Organic-Face-Scrub",
-                    price:19
                 },
                 {
                     productName:"shop-list-items-img-Pulses-From-Organic-Farm",
@@ -142,25 +138,23 @@ let maxVal;
                     price:25
                 },
                 {
+                    productName:"shop-list-items-img-Farm-Fresh-Eggs",
+                    price:34
+                },
+                {
+                    productName:"shop-list-items-img-Fresh-Orange-Juice",
+                    price:18
+                },
+                {
                     productName:"shop-list-items-img-Fresh-Organic-Honey",
                     price:35
                 },
-                {
-                    productName:"shop-list-items-img-Hand-Sanitizer",
-                    price:15
-                },
-                {
-                    productName:"shop-list-items-img-Handpicked-Red-Chillies",
-                    price:34
-                },
+                
                 {
                     productName:"shop-list-items-img-Natural-Extracted-Edible-Oil",
                     price:15
                 },
-                {
-                    productName:"shop-list-items-img-Organic-Face-Scrub",
-                    price:19
-                },
+                
                 {
                     productName:"shop-list-items-img-Pulses-From-Organic-Farm",
                     price:25
@@ -195,7 +189,7 @@ let maxVal;
                     element.classList.remove("inactive");
                     if(ans.length > 0){
                         noproduct.classList.remove("active");
-                        console.log(noproduct.classList);
+                        // console.log(noproduct.classList);
                         nopara.classList.remove("inactive");
                         searchlist.classList.remove("inactive");
                         
@@ -213,8 +207,6 @@ let maxVal;
     })
 });
 
-// noproduct.classList.add("active");
-
 clear.addEventListener("click",(e) =>{
     if(minVal != 0 || maxVal != 40){
         rangeInput[0].value = 0;
@@ -227,9 +219,10 @@ clear.addEventListener("click",(e) =>{
         shopinput.value = "";
         selectBox.options[0].selected = true;
         searchoption.classList.add("inactive");
-        headpara.innerHTML = "Home / Grocceries";
-        head.innerHTML = "Grocceries";
-        nopara.innerHTML = "Showing 1–9 of 10 results";
+        headpara.innerHTML = "Home / Juice";
+        head.innerHTML = "Juice";
+        nopara.innerHTML = "Showing all 9 results";
+
     }
     noproduct.classList.remove("active");
     nopara.classList.remove("inactive");
@@ -248,25 +241,23 @@ clear.addEventListener("click",(e) =>{
             price:25
         },
         {
+            productName:"shop-list-items-img-Farm-Fresh-Eggs",
+            price:34
+        },
+        {
+            productName:"shop-list-items-img-Fresh-Orange-Juice",
+            price:18
+        },
+        {
             productName:"shop-list-items-img-Fresh-Organic-Honey",
             price:35
         },
-        {
-            productName:"shop-list-items-img-Hand-Sanitizer",
-            price:15
-        },
-        {
-            productName:"shop-list-items-img-Handpicked-Red-Chillies",
-            price:34
-        },
+        
         {
             productName:"shop-list-items-img-Natural-Extracted-Edible-Oil",
             price:15
         },
-        {
-            productName:"shop-list-items-img-Organic-Face-Scrub",
-            price:19
-        },
+        
         {
             productName:"shop-list-items-img-Pulses-From-Organic-Farm",
             price:25
@@ -276,16 +267,20 @@ clear.addEventListener("click",(e) =>{
             price:34
         },
 
-    ]
+    ];
     
     
      
     products.forEach(product =>{
         
-            
+            // product.productName.classList.add("inactive");
+            // console.log(product.productName);
+            // let pro = product.productName;
+            // pro.classList.add("inactive");
 
             let element = document.querySelector("." + product.productName);
-            
+            // Check the condition and add the class
+            console.log(product.price);
             if(element.classList == "inactive") {
                 element.classList.add("inactive");
             }else{
@@ -295,38 +290,37 @@ clear.addEventListener("click",(e) =>{
             
         
     
+      // Get the selected index
       
     
     })
-}) 
-
+})
 
 var selectBox = document.getElementById("sort");
-selectBox.options[0].selected = true;
-let wheat = document.querySelector(".shop-list-items-img-Wheat-From-Organic-Farms");
-wheat.classList.add("inactive");
-
     var griditem1 = document.querySelector(".shop-list-items-img-Assorted-coffee");
     var griditem2 = document.querySelector(".shop-list-items-img-Cashew-Butter");
     var griditem3 = document.querySelector(".shop-list-items-img-Diabetic-Cookies");
-    var griditem4 = document.querySelector(".shop-list-items-img-Fresh-Organic-Honey");
-    var griditem5 = document.querySelector(".shop-list-items-img-Hand-Sanitizer");
-    var griditem6 = document.querySelector(".shop-list-items-img-Handpicked-Red-Chillies");
+    var griditem4 = document.querySelector(".shop-list-items-img-Farm-Fresh-Eggs");
+    var griditem5 = document.querySelector(".shop-list-items-img-Fresh-Orange-Juice");
+    var griditem6 = document.querySelector(".shop-list-items-img-Fresh-Organic-Honey");
     var griditem7 = document.querySelector(".shop-list-items-img-Natural-Extracted-Edible-Oil");
-    var griditem8 = document.querySelector(".shop-list-items-img-Organic-Face-Scrub");
-    var griditem9 = document.querySelector(".shop-list-items-img-Pulses-From-Organic-Farm");
-    var griditem10 = document.querySelector(".shop-list-items-img-Wheat-From-Organic-Farms");
+    var griditem8 = document.querySelector(".shop-list-items-img-Pulses-From-Organic-Farm");
+    var griditem9 = document.querySelector(".shop-list-items-img-Wheat-From-Organic-Farms");
+
 function checkSelectedOption() {
+    // Get the select element
+    
 
     if(selectBox.value !== "search"){
         searchoption.classList.add("inactive");
-        headpara.innerHTML = "Home / Grocceries";
-        head.innerHTML = "Grocceries";
-        nopara.innerHTML = "Showing 1–9 of 10 results";
+        headpara.innerHTML = "Home / Juice";
+        head.innerHTML = "Juice";
+        nopara.innerHTML = "Showing all 9 results";
         shopinput.value = "";
     }
+
     if(selectBox.value === "Default sorting"){
-       
+
         griditem1.classList.remove("inactive");
         griditem2.classList.remove("inactive");
         griditem3.classList.remove("inactive");
@@ -336,9 +330,6 @@ function checkSelectedOption() {
         griditem7.classList.remove("inactive");
         griditem8.classList.remove("inactive");
         griditem9.classList.remove("inactive");
-        griditem10.classList.remove("inactive");
-        
-
         griditem1.style.order = 0;
         griditem2.style.order = 1;
         griditem3.style.order = 2;
@@ -349,10 +340,9 @@ function checkSelectedOption() {
         griditem8.style.order = 7;
         griditem9.style.order = 8;
 
-        griditem10.classList.add("inactive");
-        
-    }else if(selectBox.value === "Sort by popularity"){
-       
+    }
+    else if(selectBox.value === "Sort by popularity"){
+
         griditem1.classList.remove("inactive");
         griditem2.classList.remove("inactive");
         griditem3.classList.remove("inactive");
@@ -362,24 +352,22 @@ function checkSelectedOption() {
         griditem7.classList.remove("inactive");
         griditem8.classList.remove("inactive");
         griditem9.classList.remove("inactive");
-        griditem10.classList.remove("inactive");
-        
 
-        griditem1.style.order = 3;
-        griditem2.style.order = 6;
-        griditem3.style.order = 8;
-        griditem4.style.order = 7;
-        griditem5.style.order = 1;
-        griditem6.style.order = 4;
+        griditem1.style.order = 2;
+        griditem2.style.order = 5;
+        griditem3.style.order = 7;
+        griditem4.style.order = 8;
+        griditem5.style.order = 4;
+        griditem6.style.order = 6;
         griditem7.style.order = 0;
-        
-        griditem9.style.order = 5;
-        griditem10.style.order = 2;
+        griditem8.style.order = 3;
+        griditem9.style.order = 1;
 
-        griditem8.classList.add("inactive");
         
+        
+
     }else if(selectBox.value === "Sort by average rating"){
-       
+
         griditem1.classList.remove("inactive");
         griditem2.classList.remove("inactive");
         griditem3.classList.remove("inactive");
@@ -389,104 +377,85 @@ function checkSelectedOption() {
         griditem7.classList.remove("inactive");
         griditem8.classList.remove("inactive");
         griditem9.classList.remove("inactive");
-        griditem10.classList.remove("inactive");
-        
-
-        griditem1.style.order = 5;
-        
-        griditem3.style.order = 7;
-        griditem4.style.order = 3;
-        griditem5.style.order = 2;
-        griditem6.style.order = 0;
-        griditem7.style.order = 4;
-        griditem8.style.order = 8;
-        griditem9.style.order = 1;
-        griditem10.style.order = 6;
-
-        griditem2.classList.add("inactive");
-        
-    }else if(selectBox.value === "Sort by latest"){
-       
-        griditem1.classList.remove("inactive");
-        griditem2.classList.remove("inactive");
-        griditem3.classList.remove("inactive");
-        griditem4.classList.remove("inactive");
-        griditem5.classList.remove("inactive");
-        griditem6.classList.remove("inactive");
-        griditem7.classList.remove("inactive");
-        griditem8.classList.remove("inactive");
-        griditem9.classList.remove("inactive");
-        griditem10.classList.remove("inactive");
-        
-
-        griditem1.style.order = 1;
-        
-        griditem3.style.order = 7;
-        griditem4.style.order = 6;
-        griditem5.style.order = 2;
-        griditem6.style.order = 0;
-        griditem7.style.order = 4;
-        griditem8.style.order = 8;
-        griditem9.style.order = 5;
-        griditem10.style.order = 3;
-
-        griditem2.classList.add("inactive");
-        
-    }else if(selectBox.value === "Sort by price:low to high"){
-       
-        griditem1.classList.remove("inactive");
-        griditem2.classList.remove("inactive");
-        griditem3.classList.remove("inactive");
-        griditem4.classList.remove("inactive");
-        griditem5.classList.remove("inactive");
-        griditem6.classList.remove("inactive");
-        griditem7.classList.remove("inactive");
-        griditem8.classList.remove("inactive");
-        griditem9.classList.remove("inactive");
-        griditem10.classList.remove("inactive");
-
-        griditem2.style.order = 3;
-        griditem3.style.order = 4;
-        griditem4.style.order = 7;
-        griditem5.style.order = 0;
-        griditem6.style.order = 2;
-        griditem7.style.order = 5;
-        griditem8.style.order = 8;
-        griditem9.style.order = 1;
-        griditem10.style.order = 6;
-
-        griditem1.classList.add("inactive");
-        
-    }else if(selectBox.value === "Sort by price:high to low"){
-       
-        griditem1.classList.remove("inactive");
-        griditem2.classList.remove("inactive");
-        griditem3.classList.remove("inactive");
-        griditem4.classList.remove("inactive");
-        griditem5.classList.remove("inactive");
-        griditem6.classList.remove("inactive");
-        griditem7.classList.remove("inactive");
-        griditem8.classList.remove("inactive");
-        griditem9.classList.remove("inactive");
-        griditem10.classList.remove("inactive");
-
     
 
-        griditem1.style.order = 0;
-       
-        griditem3.style.order = 5;
-        griditem4.style.order = 2;
-        griditem5.style.order = 0;
-        griditem6.style.order = 7;
-        griditem7.style.order = 4;
-        griditem8.style.order = 1;
-        griditem9.style.order = 8;
-        griditem10.style.order = 3;
+        griditem1.style.order = 6;
+        griditem2.style.order = 7;
+        griditem3.style.order = 1;
+        griditem4.style.order = 3;
+        griditem5.style.order = 4;
+        griditem6.style.order = 2;
+        griditem7.style.order = 0;
+        griditem8.style.order = 8;
+        griditem9.style.order = 5;
+        
 
-        griditem2.classList.add("inactive");
+    }else if(selectBox.value === "Sort by latest"){
+        
+        griditem1.classList.remove("inactive");
+        griditem2.classList.remove("inactive");
+        griditem3.classList.remove("inactive");
+        griditem4.classList.remove("inactive");
+        griditem5.classList.remove("inactive");
+        griditem6.classList.remove("inactive");
+        griditem7.classList.remove("inactive");
+        griditem8.classList.remove("inactive");
+        griditem9.classList.remove("inactive");
+
+        griditem1.style.order = 5;
+        griditem2.style.order = 8;
+        griditem3.style.order = 7;
+        griditem4.style.order = 2;
+        griditem5.style.order = 1;
+        griditem6.style.order = 3;
+        griditem7.style.order = 4;
+        griditem8.style.order = 0;
+        griditem9.style.order = 6;
+
+    }else if (selectBox.value === "Sort by price:low to high") {
+        griditem1.classList.remove("inactive");
+        griditem2.classList.remove("inactive");
+        griditem3.classList.remove("inactive");
+        griditem4.classList.remove("inactive");
+        griditem5.classList.remove("inactive");
+        griditem6.classList.remove("inactive");
+        griditem7.classList.remove("inactive");
+        griditem8.classList.remove("inactive");
+        griditem9.classList.remove("inactive");
+
+    
+        griditem1.style.order = 8;
+        griditem2.style.order = 2;
+        griditem3.style.order = 3;
+        griditem4.style.order = 7;
+        griditem5.style.order = 1;
+        griditem6.style.order = 6;
+        griditem7.style.order = 4;
+        griditem8.style.order = 0;
+        griditem9.style.order = 5;
+        
+    }else if (selectBox.value === "Sort by price:high to low") {
+        griditem1.classList.remove("inactive");
+        griditem2.classList.remove("inactive");
+        griditem3.classList.remove("inactive");
+        griditem4.classList.remove("inactive");
+        griditem5.classList.remove("inactive");
+        griditem6.classList.remove("inactive");
+        griditem7.classList.remove("inactive");
+        griditem8.classList.remove("inactive");
+        griditem9.classList.remove("inactive");
+        
+        griditem1.style.order = 0;
+        griditem2.style.order = 6;
+        griditem3.style.order = 5;
+        griditem4.style.order = 1;
+        griditem5.style.order = 7;
+        griditem6.style.order = 2;
+        griditem7.style.order = 4;
+        griditem8.style.order = 8;
+        griditem9.style.order = 3;
         
     }
-
 }
 
 griditem1.addEventListener("click",function() {
@@ -517,10 +486,6 @@ griditem8.addEventListener("click",function() {
 griditem9.addEventListener("click",function() {
     selectBox.options[0].selected = true;
 })
-griditem10.addEventListener("click",function() {
-    selectBox.options[0].selected = true;
-})
-
 
 function searchvalues() {
 
@@ -531,60 +496,63 @@ function searchvalues() {
     
     var productname = [
         {
+            productName:"shop-list-items-img-Natural-Extracted-Edible-Oil",
+            
+        },
+        {
             productName:"shop-list-items-img-Assorted-coffee",
-            price:35
+            
         },
         {
             productName:"shop-list-items-img-Cashew-Butter",
-            price:25
+            
         },
         {
             productName:"shop-list-items-img-Diabetic-Cookies",
-            price:25
+            
+        },
+        {
+            productName:"shop-list-items-img-Farm-Fresh-Eggs",
+            
+        },
+        {
+            productName:"shop-list-items-img-Fresh-Orange-Juice",
+            
         },
         {
             productName:"shop-list-items-img-Fresh-Organic-Honey",
-            price:35
+            
         },
-        {
-            productName:"shop-list-items-img-Hand-Sanitizer",
-            price:15
-        },
-        {
-            productName:"shop-list-items-img-Handpicked-Red-Chillies",
-            price:34
-        },
-        {
-            productName:"shop-list-items-img-Natural-Extracted-Edible-Oil",
-            price:15
-        },
-        {
-            productName:"shop-list-items-img-Organic-Face-Scrub",
-            price:19
-        },
+        
         {
             productName:"shop-list-items-img-Pulses-From-Organic-Farm",
-            price:25
         },
         {
             productName:"shop-list-items-img-Wheat-From-Organic-Farms",
-            price:34
-        },
+        }
     ]
 
-    
+    let input1 = document.querySelector(".shop-list-items-img-Natural-Extracted-Edible-Oil");
+    let input2 = document.querySelector(".shop-list-items-img-Assorted-coffee");
+    let input3 = document.querySelector(".shop-list-items-img-Cashew-Butter");
+    let input4 = document.querySelector(".shop-list-items-img-Diabetic-Cookies");
+    let input5 = document.querySelector(".shop-list-items-img-Farm-Fresh-Eggs");
+    let input6 = document.querySelector(".shop-list-items-img-Fresh-Orange-Juice");
+    let input7 = document.querySelector(".shop-list-items-img-Fresh-Organic-Honey");
+    let input11 = document.querySelector(".shop-list-items-img-Pulses-From-Organic-Farm");
+    let input12 = document.querySelector(".shop-list-items-img-Wheat-From-Organic-Farms");
 
-        griditem1.classList.add("inactive");
-        griditem2.classList.add("inactive");
-        griditem3.classList.add("inactive");
-        griditem4.classList.add("inactive");
-        griditem5.classList.add("inactive");
-        griditem6.classList.add("inactive");
-        griditem7.classList.add("inactive");
-        griditem8.classList.add("inactive");
-        griditem9.classList.add("inactive");
-        griditem10.classList.add("inactive");
-    
+    input1.classList.add("inactive");
+    input2.classList.add("inactive");
+    input3.classList.add("inactive");
+    input4.classList.add("inactive");
+    input5.classList.add("inactive");
+    input6.classList.add("inactive");
+    input7.classList.add("inactive");
+    input11.classList.add("inactive");
+    input12.classList.add("inactive");
+
+    console.log(inputvalue);
     let cnt = 0;
     productname.forEach(p =>{
         if(p.productName.includes(inputvalue)){
@@ -609,6 +577,6 @@ function searchvalues() {
 
 
     
-    headpara.innerHTML = "Home / Grocerry / Search results for " + "'" + inputvalue + "'";
+    headpara.innerHTML = "Home / Juice / Search results for " + "'" + inputvalue + "'";
     head.innerHTML = "Search results: " + "'" + inputvalue + "'";
 }

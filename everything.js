@@ -284,8 +284,11 @@ clear.addEventListener("click",(e) =>{
         headpara.innerHTML = "Home / Shop";
         head.innerHTML = "Shop";
         nopara.innerHTML = "Showing 1–9 of 12 results";
-    }
 
+    }
+    noproduct.classList.remove("active");
+    nopara.classList.remove("inactive");
+    searchlist.classList.remove("inactive");
     var products = [
         {
             productName:"shop-list-items-img-Natural-Extracted-Edible-Oil",

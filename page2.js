@@ -208,7 +208,9 @@ clear.addEventListener("click",(e) =>{
         head.innerHTML = "Shop";
         nopara.innerHTML = "Showing 10-12 of 12 results";
     }
-
+    noproduct.classList.remove("active");
+    nopara.classList.remove("inactive");
+    searchlist.classList.remove("inactive");
     var products = [
         {
             productName:"shop-list-items-img-Organic-Face-Scrub",

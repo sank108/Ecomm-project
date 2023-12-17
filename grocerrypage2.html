@@ -45,29 +45,44 @@
                 <div class="shop-2">
                     <div class="search-products">
                         <input type="text" placeholder="Search products..." id="shop-input">
-                        <div class="search-products-btn">
+                        <div class="search-products-btn" onclick="searchvalues()">
                             <i class="fa-solid fa-arrow-right"></i>
                         </div>
                     </div>
     
                     <div class="shop-product-range">
+
+                        <div class="active-filter">
+                            <h2 class="head-active-filter">Active filters</h2>
+                            <p class="para-active-filter">PRICE:</p>
+                            <div class="specific-price">
+                                <i class="fa-solid fa-circle-xmark" style="color: #e2dadd;"></i>
+                                <p class="specific-price-para">No Filter Applied</p>
+                            </div>
+
+                        </div>
                         <h2 class="shop-head">Filter by price</h2>
     
                         <div class="slider">
-                            <div class="progress"></div>
+                            <div class="progress1"></div>
+                            <div class="progress2"></div>
                         </div>
                         <div class="range-input">
-                            <input type="range" class="range-min" min="10" max="40" value="10">
-                            <input type="range" class="range-max" min="10" max="40" value="40">
+                            <input type="range" class="range-min" min="0" max="40" value="0" id="minmax">
+                            <input type="range" class="range-max" min="0" max="40" value="40" id="minmax">
                         </div>
     
                         <div class="price-range">
                             <div class="min-range">
-                                <input type="text" value="£10" readonly>
+                                <input type="text" value="£0" readonly>
                             </div>
                             <div class="max-range">
                                 <input type="text" id="max-range-1" value="£40" readonly>
                             </div>
+                        </div>
+                        
+                        <div class="clr-btn">
+                            RESET
                         </div>
     
                         <div class="side-info">
@@ -128,31 +143,40 @@
                         <div class="shop-list-header">
                             <a href="Practice.html"><p class="shop-list-header-para1">Home  /</p></a>
                             <a href="grocerry.html"><p class="shop-list-header-para2">Grocceries  /</p></a>
-                            <p class="shop-list-header-para2">Page 2</p>
+                            <p class="shop-list-header-para3">Page 2</p>
                         </div>
 
                         <div class="heading">
                             <p class="shop-list-heading">Grocerries</p>
                         </div>
 
+                        <div class="noproduct">
+                            <div class="noproduct-line"></div>
+                            <div class="noproduct-div">
+                                <i class="fa-solid fa-clapperboard fa-lg" style="color: #4ca61c;"></i>
+                                <p class="noproduct-para">No products were found matching your selection.</p>
+                            </div>
+                        </div>
+
                         <div class="search-results">
                                 <p class="search-results-para1">Showing 10–10 of 10 results</p>
                                 
                                 <div class="search-list">
-                                    <select id="sort" name="sort">
+                                    <select id="sort" name="sort" onchange="checkSelectedOption()">
                                         <option value="Default sorting">Default sorting</option>
                                         <option value="Sort by popularity">Sort by popularity</option>
                                         <option value="Sort by average rating">Sort by average rating</option>
                                         <option value="Sort by latest">Sort by latest</option>
                                         <option value="Sort by price:low to high">Sort by price:low to high</option>
                                         <option value="Sort by price:high to low">Sort by price:high to low</option>
+                                        <option value="search" id="searchoption">Searched products</option>
                                     </select>
                                 </div>
                                 
                         </div>
 
                         <div class="shop-list-items">
-                            <div class="shop-list-items-img">
+                            <div class="shop-list-items-img-Wheat-From-Organic-Farms">
                                 <a href="wheatfromorganicfarm.html"><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/wheat-300x300.jpg"
                                 height="280" width="280"></a>
                                 <p class="shop-list-items-category">Grocceries</p>
@@ -258,5 +282,7 @@
             </div>
         </div>
     </div>
+
+    <script src="grocerrypage2.js"></script>
 </body>
 </html>

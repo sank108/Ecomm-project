@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href="bill.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-1">
+                <a href="Practice.html"><img src="./Images/logo.png" 
+                    alt="img" height="70px" width="152px"
+                    class="logoimg"/></a> 
+            <a href="Everything.html"><p class="Everything">Everything</p></a>
+            <a href="grocerry.html"><p class="Grocceries">Grocceries</p></a>
+            <a href="juice.html"><p class="Juice">Juice</p></a>
+            </div>
+           <div class="navbar-2">
+            <div class="about">
+                <a href="about.html"><p class="About">About</p></a>
+                <a href="Contact.html"><p class="Contact">Contact</p></a>
+            </div>
+            <div class="cart">
+                <p>₹0.00</p>
+                <i class="fa-solid fa-basket-shopping basket"><sup>0</sup></i>
+                <a href="Form.html"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
+            </div>
+           </div>
+        </div>
+
+        
+            
+            <div class="tablecontainer">
+                <p class="cart-head">Cart</p>
+                <table class="table-detail">
+                    <thead class="table-heading">
+                        <th></th>
+                        <th></th>
+                        <th class="head">Product</th>
+                        <th class="head">Price</th>
+                        <th class="head">Quantity</th>
+                        <th class="head">Subtotal</th>
+                    </thead>
+                    <tr class="Assorted-Coffee">
+                        <td><i class="fa-regular fa-circle-xmark cross" style="color: #606366;"></i></td>
+                        
+                        <td><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/coffee-asorted.jpg" height="60" width="60" class="acimg"></td>
+                        <td class="productname">Assorted Coffee</td>
+                        <td class="product-price">£35.00</td>
+                        <td><input type="number" id="quantity-Assorted-Coffee" name="Assorted-Coffee" min="1" value="1"></td>
+                        <td class="product-subtotal-assorted-coffee">£35.00</td>
+                    </tr>
+                    <tr class="Cashew-Butter">
+                        <td><i class="fa-regular fa-circle-xmark cross" style="color: #606366;"></i></td>
+                        
+                        <td><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/cashew-butter-500-300x300.jpg" height="60" width="60" class="acimg"></td>
+                        <td class="productname">Cashew Butter</td>
+                        <td class="product-price">£25.00</td>
+                        <td><input type="number" id="quantity" name="Cashew-Butter" min="1" value="1"></td>
+                        <td class="product-subtotal">£25.00</td>
+                    </tr>
+                    <tr class="Diabetic-Cookies">
+                        <td><i class="fa-regular fa-circle-xmark cross" style="color: #606366;"></i></td>
+                        
+                        <td><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/diabetic-cookies-300x300.jpg" height="60" width="60" class="acimg"></td>
+                        <td class="productname">Diabetic Cookies</td>
+                        <td class="product-price">£25.00</td>
+                        <td><input type="number" id="quantity" name="Diabetic-Cookies" min="1" value="1"></td>
+                        <td class="product-subtotal">£25.00</td>
+                    </tr>
+                    <tr class="Farm-Fresh-Eggs">
+                        <td><i class="fa-regular fa-circle-xmark cross" style="color: #606366;"></i></td>
+                        
+                        <td><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/eggs-300x300.jpg" height="60" width="60" class="acimg"></td>
+                        <td class="productname">Farm Fresh Eggs</td>
+                        <td class="product-price">£34.00</td>
+                        <td><input type="number" id="quantity" name="Farm-Fresh-Eggs" min="1" value="1"></td>
+                        <td class="product-subtotal">£34.00</td>
+                    </tr>
+                    <tr class="Fresh-Orange-Juice">
+                        <td><i class="fa-regular fa-circle-xmark cross" style="color: #606366;"></i></td>
+                        
+                        <td><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/orage-juice-kariz-300x300.jpg" height="60" width="60" class="acimg"></td>
+                        <td class="productname">Fresh Orange Juice</td>
+                        <td class="product-price">£18.00</td>
+                        <td><input type="number" id="quantity" name="Fresh-Orange-Juice" min="1" value="1"></td>
+                        <td class="product-subtotal">£18.00</td>
+                    </tr>
+                    <tr class="Fresh-Organic-Honey">
+                        <td><i class="fa-regular fa-circle-xmark cross" style="color: #606366;"></i></td>
+                        
+                        <td><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/organic-honey-300x300.jpg" height="60" width="60" class="acimg"></td>
+                        <td class="productname">Fresh Organic Honey</td>
+                        <td class="product-price">£34.00</td>
+                        <td><input type="number" id="quantity" name="Fresh-Organic-Honey" min="1" value="1"></td>
+                        <td class="product-subtotal">£34.00</td>
+                    </tr>
+                    <tr class="Hand-Sanitizer">
+                        <td><i class="fa-regular fa-circle-xmark cross" style="color: #606366;"></i></td>
+                        
+                        <td><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/sanitizer-300x300.jpg" height="60" width="60" class="acimg"></td>
+                        <td class="productname">Hand Sanitizer</td>
+                        <td class="product-price">£15.00</td>
+                        <td><input type="number" id="quantity" name="Hand-Sanitizer" min="1" value="1"></td>
+                        <td class="product-subtotal">£15.00</td>
+                    </tr>
+                    <tr class="Handpicked-Red-Chillies">
+                        <td><i class="fa-regular fa-circle-xmark cross" style="color: #606366;"></i></td>
+                        
+                        <td><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/red-chillies-300x300.jpg" height="60" width="60" class="acimg"></td>
+                        <td class="productname">Handpicked Red Chillies</td>
+                        <td class="product-price">£19.00</td>
+                        <td><input type="number" id="quantity" name="-Handpicked-Red-Chillies" min="1" value="1"></td>
+                        <td class="product-subtotal">£19.00</td>
+                    </tr>
+                    <tr class="Natural-Extracted-Edible-Oil">
+                        <td><i class="fa-regular fa-circle-xmark cross" style="color: #606366;"></i></td>
+                        
+                        <td><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/edible-oil-300x300.jpg" height="60" width="60" class="acimg"></td>
+                        <td class="productname">Natural Extracted Edible Oil</td>
+                        <td class="product-price">£25.00</td>
+                        <td><input type="number" id="quantity" name="Natural-Extracted-Edible-Oil" min="1" value="1"></td>
+                        <td class="product-subtotal">£25.00</td>
+                    </tr>
+                    <tr class="Organic-Face-Scrub">
+                        <td><i class="fa-regular fa-circle-xmark cross" style="color: #606366;"></i></td>
+                        
+                        <td><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/face-wash-300x300.jpg" height="60" width="60" class="acimg"></td>
+                        <td class="productname">Organic Face Scrub</td>
+                        <td class="product-price">£35.00</td>
+                        <td><input type="number" id="quantity" name="Organic-Face-Scrub" min="1" value="1"></td>
+                        <td class="product-subtotal">£35.00</td>
+                    </tr>
+                    <tr class="Pulses-From-Organic-Farm">
+                        <td><i class="fa-regular fa-circle-xmark cross" style="color: #606366;"></i></td>
+                        
+                        <td><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/pulses-300x300.jpg" height="60" width="60" class="acimg"></td>
+                        <td class="productname">Pulses From Organic Farm</td>
+                        <td class="product-price">£15.00</td>
+                        <td><input type="number" id="quantity" name="Pulses-From-Organic-Farm" min="1" value="1"></td>
+                        <td class="product-subtotal">£15.00</td>
+                    </tr>
+                    <tr class="Wheat-From-Organic-Farms">
+                        <td><i class="fa-regular fa-circle-xmark cross" style="color: #606366;"></i></td>
+                        
+                        <td><img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/wheat-300x300.jpg" height="60" width="60" class="acimg"></td>
+                        <td class="productname">Wheat From Organic Farms</td>
+                        <td class="product-price">£34.00</td>
+                        <td><input type="number" id="quantity" name="Wheat-From-Organic-Farms" min="1" value="1"></td>
+                        <td class="product-subtotal">£34.00</td>
+                    </tr>
+                    
+    
+                    
+                    
+                </table>
+
+                <div class="hidden">
+                    <div class="underline"></div>
+                    <div class="para">
+                        <i class="fa-solid fa-clapperboard" style="color: #6a9739;"></i>
+                        <p class="line">Your cart is currently empty.</p>
+                    </div>
+                    <a href="Everything.html">
+                        <div class="btn">
+                            RETURN TO SHOP
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-definition">
+                        <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/organic-store-white-logo.png"
+                         height="79" width="180" class="footer-img">
+                        <p class="footer-para">Maecenas mi justo, interdum at consectetur vel,</p>
+                        <p class="footer-para">tristique et arcu. Ut quis eros blandit, ultrices diam in,</p>
+                        <p class="footer-para">elementum ex. Suspendisse quis faucibus urna.</p>
+                        <p class="footer-para">Suspendisse pellentesque.</p>
+                    </div>
+    
+                    <div class="Links">
+                        <h2 class="link-head">Quick Links</h2>
+                        
+                        <p class="link-para">About</p>
+                        <p class="link-para">Cart</p>
+                        <p class="link-para">Checkout</p>
+                        <p class="link-para">Contact</p>
+                        <p class="link-para">Home</p>
+                        <p class="link-para">My Account</p>
+                        <p class="link-para">Shop</p>
+    
+                        <h2 class="link-head-2">Site Links</h2>
+    
+                        <p class="link-para">Privacy Policy</p>
+                        <p class="link-para">Shipping Details</p>
+                        <p class="link-para">Offers & Coupons</p>
+                        <p class="link-para">Terms & Conditions</p>
+                    </div>
+    
+                    <div class="additional-info">
+                        <h2 class="link-head1">Download Our Mobile App</h2>
+                        <p class="link-para1">Lorem ipsum dolor sit amet,</p>
+                        <p class="link-para1">consectetur adipiscing elit. Donec</p>
+                        <p class="link-para1">aliquam gravida sollicitudin. Praesent</p>
+                        <p class="link-para1">porta enim mi, non tincidunt libero</p>
+                        <p class="link-para1">interdum sit amet.</p>
+    
+                        <h2 class="link-head-2">Quick Links</h2>
+    
+                        <p class="link-para-1">Know More About Us</p>
+                        <p class="link-para-1">Visit Store</p>
+                        <p class="link-para-1">Let's Connect</p>
+                        <p class="link-para-1">Locate Stores</p>
+    
+                        <div class="app-info">
+                            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/play-store.png"
+                                      height="45" width="140">
+                            <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/app-store.png"
+                                      height="45" width="140">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="footer-line"></div>
+                <div class="copyright">
+                    <p class="copyright-para">Copyright © 2023 | Organic Store</p>
+                    <div class="copyright-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    
+                </div>
+                
+    
+            </div>
+            
+        
+    </div>
+        
+
+        
+    
+
+    <script src="bill.js"></script>
+</body>
+</html>
