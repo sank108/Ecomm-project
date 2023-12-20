@@ -8,8 +8,8 @@ btn.addEventListener("click",()=>{
     // const firstnameac = quantity.name;
     
     // localStorage.setItem('itemname',JSON.stringify({firstnameac:quantity.name,quantity:quantity.value}));
-    localStorage.setItem("freshhoney",quantity.name);
-    localStorage.setItem("freshhoneyquantity",quantity.value);
-    localStorage.setItem("clickedfreshhoney",true);
+    localStorage.setItem("pulses",quantity.name);
+    localStorage.setItem("pulsesquantity",quantity.value);
+    localStorage.setItem("clickedpulses",true);
     hiddentab.classList.remove("inactive");
 })
