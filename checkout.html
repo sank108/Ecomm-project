@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href="checkout.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-1">
+                <a href="Practice.html"><img src="./Images/logo.png" 
+                    alt="img" height="70px" width="152px"
+                    class="logoimg"/></a> 
+            <a href="Everything.html"><p class="Everything">Everything</p></a>
+            <a href="grocerry.html"><p class="Grocceries">Grocceries</p></a>
+            <a href="juice.html"><p class="Juice">Juice</p></a>
+            </div>
+           <div class="navbar-2">
+            <div class="about">
+                <a href="about.html"><p class="About">About</p></a>
+                <a href="Contact.html"><p class="Contact">Contact</p></a>
+            </div>
+            <div class="cart">
+                <p>₹0.00</p>
+                <i class="fa-solid fa-basket-shopping basket"><sup>0</sup></i>
+                <a href="Form.html"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
+            </div>
+           </div>
+        </div>
+
+
+        <div class="entirecouponclass">
+            <div class="coupon">
+                <h2 class="checkout">Checkout</h2>
+                <div class="underline"></div>
+                <div class="coupon-code">
+                    <i class="fa-solid fa-clapperboard" style="color: #8bc34a;"></i>
+                    <p class="haveacoupon">Have a coupon?</p>
+                    <p class="clicked">Click here to enter your code</p>
+                </div>
+            </div>
+
+            <div class="hidden">
+                <p class="hidden-para">If you have a coupon code, please apply it below.</p>
+                <div class="hidden-inputandbtn">
+                    <input type="text" id="hidden-input" placeholder="Coupon code">
+                    <div class="updatecart-blur">
+                        APPLY COUPON
+                    </div>
+                </div>
+            </div>
+
+            <div class="warning-line"></div>
+            <div class="warning">
+                
+                <p class="firstn"><span class="fin">First name</span> is a required field</p>
+                <p class="lastn"><span class="lin">Last name</span> is a required field</p>
+                <p class="coun"><span class="cou">Country</span> is a required field</p>
+                <p class="stradd"><span class="sadd">Street Address</span> is a required field</p>
+                <p class="towncity"><span class="tc">Town/City</span> is a required field</p>
+                <p class="state"><span class="sta">State</span> is a required field</p>
+                <p class="pincode"><span class="pin">Pincode</span> is a required field</p>
+                <p class="phone"><span class="pho">Phone</span> is a required field</p>
+                <p class="email"><span class="ema">Email</span> is a required field</p>
+            </div>
+
+            <div class="form">
+                <div class="form-details">
+                    <h2 class="form-billing-detail">Billing Details</h2>
+                    <div class="form-line"></div>
+                    <div class="form-name">
+                        <div class="firstname">
+                            <p class="fn">First name <span class="star">*</span></p>
+                            <input type="text" class="first-name formfirstname" required> 
+                        </div>
+                        <div class="firstname">
+                            <p class="fn">Last name <span class="star">*</span></p>
+                            <input type="text" class="first-name formlastname" required> 
+                        </div>
+                    </div>
+
+                    <p class="fn">Company name (optional)</p>
+                    <input type="text" class="forminput-full-width">
+
+                    <p class="fn">Country/Region <span class="star">*</span></p>
+                    <div class="wrapper">
+                        <div class="select-btn">
+                            <span class="ct">Select Country</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="content">
+                            <div class="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" placeholder="Search" required>
+                            </div>
+                            <ul class="options">
+                                <li>Afghanistan</li>
+                <li>Albania</li>
+                <li>Algeria</li>
+                <li>Andorra</li>
+                <li>Angola</li>
+                <li>Antigua and Barbuda</li>
+                <li>Argentina</li>
+                <li>Armenia</li>
+                <li>Australia</li>
+                <li>Austria</li>
+                <li>Azerbaijan</li>
+                <li>Bahamas</li>
+                <li>Bahrain</li>
+                <li>Bangladesh</li>
+                <li>Barbados</li>
+                <li>Belarus</li>
+                <li>Belgium</li>
+                <li>Belize</li>
+                <li>Benin</li>
+                <li>Bhutan</li>
+                <li>Bolivia</li>
+                <li>Bosnia and Herzegovina</li>
+                <li>Botswana</li>
+                <li>Brazil</li>
+                <li>Brunei</li>
+                <li>Bulgaria</li>
+                <li>Burkina Faso</li>
+                <li>Burundi</li>
+                <li>Cabo Verde</li>
+                <li>Cambodia</li>
+                <li>Cameroon</li>
+                <li>Canada</li>
+                <li>Central African Republic</li>
+                <li>Chad</li>
+                <li>Chile</li>
+                <li>China</li>
+                <li>Colombia</li>
+                <li>Comoros</li>
+                <li>Congo</li>
+                <li>Costa Rica</li>
+                <li>Croatia</li>
+                <li>Cuba</li>
+                <li>Cyprus</li>
+                <li>Czechia</li>
+                <li>Denmark</li>
+                <li>Djibouti</li>
+                <li>Dominica</li>
+                <li>Dominican Republic</li>
+                <li>Ecuador</li>
+                <li>Egypt</li>
+                <li>El Salvador</li>
+                <li>Equatorial Guinea</li>
+                <li>Eritrea</li>
+                <li>Estonia</li>
+                <li>Eswatini</li>
+                <li>Ethiopia</li>
+                <li>Fiji</li>
+                <li>Finland</li>
+                <li>France</li>
+                <li>Gabon</li>
+                <li>Gambia</li>
+                <li>Georgia</li>
+                <li>Germany</li>
+                <li>Ghana</li>
+                <li>Greece</li>
+                <li>Grenada</li>
+                <li>Guatemala</li>
+                <li>Guinea</li>
+                <li>Guinea-Bissau</li>
+                <li>Guyana</li>
+                <li>Haiti</li>
+                <li>Honduras</li>
+                <li>Hungary</li>
+                <li>Iceland</li>
+                <li>India</li>
+                <li>Indonesia</li>
+                <li>Iran</li>
+                <li>Iraq</li>
+                <li>Ireland</li>
+                <li>Israel</li>
+                <li>Italy</li>
+                <li>Jamaica</li>
+                <li>Japan</li>
+                <li>Jordan</li>
+                <li>Kazakhstan</li>
+                <li>Kenya</li>
+                <li>Kiribati</li>
+                <li>Korea, North</li>
+                <li>Korea, South</li>
+                <li>Kosovo</li>
+                <li>Kuwait</li>
+                <li>Kyrgyzstan</li>
+                <li>Laos</li>
+                <li>Latvia</li>
+                <li>Lebanon</li>
+                <li>Lesotho</li>
+                <li>Liberia</li>
+                <li>Libya</li>
+                <li>Liechtenstein</li>
+                <li>Lithuania</li>
+                <li>Luxembourg</li>
+                <li>Madagascar</li>
+                <li>Malawi</li>
+                <li>Malaysia</li>
+                <li>Maldives</li>
+                <li>Mali</li>
+                <li>Malta</li>
+                <li>Marshall Islands</li>
+                <li>Mauritania</li>
+                <li>Mauritius</li>
+                <li>Mexico</li>
+                <li>Micronesia</li>
+                <li>Moldova</li>
+                <li>Monaco</li>
+                <li>Mongolia</li>
+                <li>Montenegro</li>
+                <li>Morocco</li>
+                <li>Mozambique</li>
+                <li>Myanmar</li>
+                <li>Namibia</li>
+                <li>Nauru</li>
+                <li>Nepal</li>
+                <li>Netherlands</li>
+                <li>New Zealand</li>
+                <li>Nicaragua</li>
+                <li>Niger</li>
+                <li>Nigeria</li>
+                <li>North Macedonia</li>
+                <li>Norway</li>
+                <li>Oman</li>
+                <li>Pakistan</li>
+                <li>Panama</li>
+                <li>Papua New Guinea</li>
+                <li>Paraguay</li>
+                <li>Peru</li>
+                <li>Philippines</li>
+                <li>Poland</li>
+                <li>Portugal</li>
+                <li>Qatar</li>
+                <li>Romania</li>
+                <li>Russia</li>
+                <li>Rwanda</li>
+                <li>Saint Kitts and Nevis</li>
+                <li>Saint Lucia</li>
+                <li>Saint Vincent and the Grenadines</li>
+                <li>Samoa</li>
+                <li>San Marino</li>
+                <li>Sao Tome and Principe</li>
+                <li>Saudi Arabia</li>
+                <li>Senegal</li>
+                <li>Serbia</li>
+                <li>Seychelles</li>
+                <li>Sierra Leone</li>
+                <li>Singapore</li>
+                <li>Slovakia</li>
+                <li>Slovenia</li>
+                <li>Solomon Islands</li>
+                <li>Somalia</li>
+                <li>South Africa</li>
+                <li>South Sudan</li>
+                <li>Spain</li>
+                <li>Sri Lanka</li>
+                <li>Sudan</li>
+                <li>Suriname</li>
+                <li>Sweden</li>
+                <li>Switzerland</li>
+                <li>Syria</li>
+                <li>Taiwan</li>
+                <li>Tajikistan</li>
+                <li>Tanzania</li>
+                <li>Thailand</li>
+                <li>Timor-Leste</li>
+                <li>Togo</li>
+                <li>Tonga</li>
+                <li>Trinidad and Tobago</li>
+                <li>Tunisia</li>
+                <li>Turkey</li>
+                <li>Turkmenistan</li>
+                <li>Tuvalu</li>
+                <li>Uganda</li>
+                <li>Ukraine</li>
+                <li>United Arab Emirates</li>
+                <li>United Kingdom</li>
+                <li>United States</li>
+                <li>Uruguay</li>
+                <li>Uzbekistan</li>
+                <li>Vanuatu</li>
+                <li>Vatican City</li>
+                <li>Venezuela</li>
+                <li>Vietnam</li>
+                <li>Yemen</li>
+                <li>Zambia</li>
+                <li>Zimbabwe</li>
+                            </ul>
+                        </div>
+                            
+                        
+                        
+                    </div>
+
+                    <p class="fn">Street Address <span class="star">*</span></p>
+                    <div class="address">
+                        <input type="text" class="forminput-full-width formaddress" placeholder="House number and street name" required>
+                        <input type="text" class="forminput-full-width" placeholder="Apartment,suite,unite,etc (optional)">
+                    </div>
+                    
+
+                    <p class="fn">Town/District <span class="star">*</span></p>
+                    <input type="text" class="formcity forminput-full-width" required>
+
+                    <p class="fn">State <span class="star">*</span></p>
+                    <input type="text" class="formstate forminput-full-width" required>
+
+                    <p class="fn">Pincode <span class="star">*</span></p>
+                    <input type="text" class="formpin forminput-full-width" required>
+
+                    <p class="fn">Phone <span class="star">*</span></p>
+                    <input type="tel" class="formphone forminput-full-width" required>
+
+                    <p class="fn">Email address <span class="star">*</span></p>
+                    <input type="email" class="formemail forminput-full-width" required>
+
+                    <h2 class="form-billing-detail">Additional information</h2>
+                    <div class="form-line"></div>
+                    <h3 class="fn fnf">Order notes(optional)</h3>
+                    <input type="text" class="forminput-full-width forminput-full-width2" placeholder="Notes about your order,e.g. special notes for delivery">
+
+                </div>
+
+                <div class="bill-details">
+                    <p class="bill-details-head">Your Order</p>
+
+                    <div class="head-billdetails">
+                        <p class="fn">Product</p>
+                        <p class="fn">Subtotal</p>
+                        
+                    </div>
+                    <div class="bill-details-line"></div>
+
+                    <div class="bill-product" id="assorted-coffee">
+                        <div class="assorted-coffee">
+                            <p class="pn">Assorted Coffee x <span id="ac-quantity" class="pn">1</span></p>
+                            <p id="ac-subtotal" class="pn">£35.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    <div class="bill-product" id="cashew-butter">
+                        <div class="assorted-coffee">
+                            <p class="pn">Cashew Butter x <span id="cb-quantity" class="pn">1</span></p>
+                            <p id="cb-subtotal" class="pn">£25.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    <div class="bill-product" id="diabetic-cookies">
+                        <div class="assorted-coffee">
+                            <p class="pn">Diabetic Cookies x <span id="dc-quantity" class="pn">1</span></p>
+                            <p id="dc-subtotal" class="pn">£25.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    <div class="bill-product" id="Farm-Fresh-Eggs">
+                        <div class="assorted-coffee">
+                            <p class="pn">Farm Fresh Eggs x <span id="ffe-quantity" class="pn">1</span></p>
+                            <p id="ffe-subtotal" class="pn">£34.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    <div class="bill-product" id="Fresh-Orange-Juice">
+                        <div class="assorted-coffee">
+                            <p class="pn">Fresh Orange Juice x <span id="foj-quantity" class="pn">1</span></p>
+                            <p id="foj-subtotal" class="pn">£18.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    <div class="bill-product" id="Fresh-Organic-Honey">
+                        <div class="assorted-coffee">
+                            <p class="pn">Fresh Organic Honey x <span id="foh-quantity" class="pn">1</span></p>
+                            <p id="foh-subtotal" class="pn">£34.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    
+                    <div class="bill-product" id="Hand-Sanitizer">
+                        <div class="assorted-coffee">
+                            <p class="pn">Hand Sanitizer x <span id="hs-quantity" class="pn">1</span></p>
+                            <p id="hs-subtotal" class="pn">£15.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    <div class="bill-product" id="Handpicked-Red-Chillies">
+                        <div class="assorted-coffee">
+                            <p class="pn">Handpicked Red Chillies x <span id="hprc-quantity" class="pn">1</span></p>
+                            <p id="hprc-subtotal" class="pn">£19.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    <div class="bill-product" id="Natural-Extracted-Edible-Oil">
+                        <div class="assorted-coffee">
+                            <p class="pn">Natural Extracted Edible Oil x <span id="neeo-quantity" class="pn">1</span></p>
+                            <p id="neeo-subtotal" class="pn">£25.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    <div class="bill-product" id="Organic-Face-Scrub">
+                        <div class="assorted-coffee">
+                            <p class="pn">Organic Face Scrub x <span id="ofs-quantity" class="pn">1</span></p>
+                            <p id="ofs-subtotal" class="pn">£35.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    <div class="bill-product" id="Pulses-From-Organic-Farm">
+                        <div class="assorted-coffee">
+                            <p class="pn">Pulses From Organic Farm x <span id="pfof-quantity" class="pn">1</span></p>
+                            <p id="pfof-subtotal" class="pn">£15.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    <div class="bill-product" id="Wheat-From-Organic-Farms">
+                        <div class="assorted-coffee">
+                            <p class="pn">Wheat From Organic Farms x <span id="wfof-quantity" class="pn">1</span></p>
+                            <p id="wfof-subtotal" class="pn">£34.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    <div class="bill-product" id="st">
+                        <div class="assorted-coffee">
+                            <p class="pn">Subtotal</p>
+                            <p id="subtotal" class="pn">£34.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    <div class="bill-product" id="t">
+                        <div class="assorted-coffee">
+                            <p class="pn">Total</p>
+                            <p id="total" class="pn">£34.00</p>
+                        </div>
+                        <div class="bill-details-line product"></div>
+                    </div>
+                    
+
+                    <div class="payment-options">
+                        <div id="checkpayment">
+                            <input type="radio" id="checky" name="payment" checked>
+                            <p class="fn1">Check Payments</p>
+                        </div>
+                        <i class="fa-solid fa-caret-up fa-2xl checks-para" style="color: #edebeb;"></i>
+                        <div class="check-para">
+                            <p class="check-para-para">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                        </div>
+
+                        <div id="cashpayment">
+                            <input type="radio" class="delivery" name="payment">
+                            <p class="fn1">Cash on delivery</p>
+                        </div>
+                        <i class="fa-solid fa-caret-up fa-2xl deliverypara" style="color: #edebeb;"></i>
+                        <div class="check-para1">
+                        <p class="check-para-para1">Pay with cash upon delivery.</p>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="placeorder">PLACE ORDER</div>
+
+                    
+                </div>
+                
+            </div>
+    
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-definition">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/organic-store-white-logo.png"
+                     height="79" width="180" class="footer-img">
+                    <p class="footer-para">Maecenas mi justo, interdum at consectetur vel,</p>
+                    <p class="footer-para">tristique et arcu. Ut quis eros blandit, ultrices diam in,</p>
+                    <p class="footer-para">elementum ex. Suspendisse quis faucibus urna.</p>
+                    <p class="footer-para">Suspendisse pellentesque.</p>
+                </div>
+
+                <div class="Links">
+                    <h2 class="link-head">Quick Links</h2>
+                    
+                    <p class="link-para">About</p>
+                    <p class="link-para">Cart</p>
+                    <p class="link-para">Checkout</p>
+                    <p class="link-para">Contact</p>
+                    <p class="link-para">Home</p>
+                    <p class="link-para">My Account</p>
+                    <p class="link-para">Shop</p>
+
+                    <h2 class="link-head-2">Site Links</h2>
+
+                    <p class="link-para">Privacy Policy</p>
+                    <p class="link-para">Shipping Details</p>
+                    <p class="link-para">Offers & Coupons</p>
+                    <p class="link-para">Terms & Conditions</p>
+                </div>
+
+                <div class="additional-info">
+                    <h2 class="link-head1">Download Our Mobile App</h2>
+                    <p class="link-para1">Lorem ipsum dolor sit amet,</p>
+                    <p class="link-para1">consectetur adipiscing elit. Donec</p>
+                    <p class="link-para1">aliquam gravida sollicitudin. Praesent</p>
+                    <p class="link-para1">porta enim mi, non tincidunt libero</p>
+                    <p class="link-para1">interdum sit amet.</p>
+
+                    <h2 class="link-head-2">Quick Links</h2>
+
+                    <p class="link-para-1">Know More About Us</p>
+                    <p class="link-para-1">Visit Store</p>
+                    <p class="link-para-1">Let's Connect</p>
+                    <p class="link-para-1">Locate Stores</p>
+
+                    <div class="app-info">
+                        <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/play-store.png"
+                                  height="45" width="140">
+                        <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/app-store.png"
+                                  height="45" width="140">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer-line"></div>
+            <div class="copyright">
+                <p class="copyright-para">Copyright © 2023 | Organic Store</p>
+                <div class="copyright-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                
+            </div>
+            
+
+        </div>
+
+        
+            
+            
+            
+        
+    </div>
+        
+
+        
+    
+
+    <script src="checkout.js"></script>
+</body>
+</html>

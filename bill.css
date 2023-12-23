@@ -679,3 +679,7 @@ th,td{
     color: #333333;
     font-weight: 700;
 }
+
+.inactive{
+    display: none;
+}

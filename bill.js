@@ -59,6 +59,7 @@ const upblur = document.querySelector("#upblur");
 const upact = document.querySelector("#upact");
 const subtotalprice = document.querySelector(".subtotal-price");
 const totalprice = document.querySelector(".total-price");
+const checkoutbtn = document.querySelector(".checkoutbtn");
 
 tableheading.classList.add("inactive");
 assortedcoffee.classList.add("inactive");
@@ -76,7 +77,10 @@ WheatFromOrganicFarms.classList.add("inactive");
 upact.classList.add("inactive");
 
 const map = new Map();
+var ans = [];
+let updateinput = false;
 
+const acquan = localStorage.getItem("assortedcoffeequantity");
 if(localStorage.getItem("clickedassortedcoffee") == "true"){
     tableheading.classList.remove("inactive");
     assortedcoffee.classList.remove("inactive");
@@ -86,17 +90,27 @@ if(localStorage.getItem("clickedassortedcoffee") == "true"){
     var acsubtotal = assortedcoffeeinput.value*35;
     assortedcoffeesubtotal.textContent = "£"+acsubtotal+".00";
     map.set('assortedcoffeeinput',acsubtotal);
+    // localStorage.setItem("acquantity",assortedcoffeeinput.value);
+    console.log(assortedcoffeeinput.value);
     assortedcoffeeinput.addEventListener("change",function() {
         upact.classList.remove("inactive");
         upblur.classList.add("inactive");
         var acsubtotal = assortedcoffeeinput.value*35;
         assortedcoffeesubtotal.textContent = "£"+acsubtotal+".00";
         map.set('assortedcoffeeinput',acsubtotal);
-        ans.assortedcoffeeprice = acsubtotal;
+        console.log(assortedcoffeeinput.value);
+        updateinput = true;
+        
     })
     
     
 }
+
+
+
+
+
+
 
 if(localStorage.getItem("clickedcashewbutterquantity") == "true"){
     tableheading.classList.remove("inactive");
@@ -117,7 +131,7 @@ if(localStorage.getItem("clickedcashewbutterquantity") == "true"){
         var cbsubtotal = cashewbutterinput.value*25;
         cashewbuttersubtotal.textContent = "£"+cbsubtotal+".00";
         map.set('cashewbutterinput',cbsubtotal);
-        ans.cashewbutterprice = cbsubtotal;
+        updateinput = true;
     })
 }
 
@@ -140,6 +154,7 @@ if(localStorage.getItem("clickeddiabeticcookiesquantity") == "true"){
         var dcsubtotal = diabeticcookiesinput.value*25;
         diabeticcookiessubtotal.textContent = "£"+dcsubtotal+".00";
         map.set('diabeticcookiesinput',dcsubtotal);
+        updateinput = true;
     })
 }
 
@@ -148,7 +163,7 @@ if(localStorage.getItem("clickedextractedoilquantity") == "true"){
     NaturalExtractedEdibleOil.classList.remove("inactive");
     hidden.classList.add("inactive");
     
-    NaturalExtractedEdibleOilinput.value = localStorage.getItem("diabeticcookiesquantity");
+    NaturalExtractedEdibleOilinput.value = localStorage.getItem("extractedoilquantity");
     var eosubtotal = NaturalExtractedEdibleOilinput.value*25;
     NaturalExtractedEdibleOilsubtotal.textContent = "£"+eosubtotal+".00";
     map.set('NaturalExtractedEdibleOilinput',eosubtotal);
@@ -162,6 +177,7 @@ if(localStorage.getItem("clickedextractedoilquantity") == "true"){
         var eosubtotal = NaturalExtractedEdibleOilinput.value*25;
         NaturalExtractedEdibleOilsubtotal.textContent = "£"+eosubtotal+".00";
         map.set('NaturalExtractedEdibleOilinput',eosubtotal);
+        updateinput = true;
     })
 }
 
@@ -184,6 +200,7 @@ if(localStorage.getItem("clickfresheggquantity") == "true"){
         var ffesubtotal = FarmFreshEggsinput.value*34;
         FarmFreshEggssubtotal.textContent = "£"+ffesubtotal+".00";
         map.set('FarmFreshEggsinput',ffesubtotal);
+        updateinput = true;
     })
 }
 
@@ -206,6 +223,7 @@ if(localStorage.getItem("clickedfreshorangejuice") == "true"){
         var ff0subtotal = FreshOrangeJuiceinput.value*18;
         FreshOrangeJuicesubtotal.textContent = "£"+ff0subtotal+".00";
         map.set('FreshOrangeJuiceinput',ff0subtotal);
+        updateinput = true;
     })
 }
 
@@ -228,6 +246,7 @@ if(localStorage.getItem("clickedfreshhoney") == "true"){
         var ffhsubtotal = FreshOrganicHoneyinput.value*34;
         FreshOrganicHoneysubtotal.textContent = "£"+ffhsubtotal+".00";
         map.set('FreshOrganicHoneyinput',ffhsubtotal);
+        updateinput = true;
     })
 }
 
@@ -250,6 +269,7 @@ if(localStorage.getItem("clickedhandsanitizer") == "true"){
         var hssubtotal = HandSanitizerinput.value*15;
     HandSanitizersubtotal.textContent = "£"+hssubtotal+".00";
     map.set('HandSanitizerinput',hssubtotal);
+    updateinput = true;
     })
 }
 
@@ -268,7 +288,7 @@ if(localStorage.getItem("clickedredchilly") == "true"){
             upact.classList.remove("inactive");
             upblur.classList.add("inactive");
         }
-        
+        updateinput = true;
         var hprsubtotal = HandpickedRedChilliesinput.value*19;
         HandpickedRedChilliessubtotal.textContent = "£"+hprsubtotal+".00";
         map.set('HandSanitizerinput',hprsubtotal);
@@ -290,7 +310,7 @@ if(localStorage.getItem("clickedfacescrub") == "true"){
             upact.classList.remove("inactive");
             upblur.classList.add("inactive");
         }
-        
+        updateinput = true;
         var ofssubtotal = OrganicFaceScrubinput.value*35;
     OrganicFaceScrubsubtotal.textContent = "£"+ofssubtotal+".00";
     map.set('OrganicFaceScrubinput',ofssubtotal);
@@ -312,7 +332,7 @@ if(localStorage.getItem("clickedpulses") == "true"){
             upact.classList.remove("inactive");
             upblur.classList.add("inactive");
         }
-        
+        updateinput = true;
         var pulsessubtotal = PulsesFromOrganicFarminput.value*15;
         PulsesFromOrganicFarmsubtotal.textContent = "£"+pulsessubtotal+".00";
         map.set('PulsesFromOrganicFarminput',pulsessubtotal);
@@ -334,7 +354,7 @@ if(localStorage.getItem("clickedwheat") == "true"){
             upact.classList.remove("inactive");
             upblur.classList.add("inactive");
         }
-        
+        updateinput = true;
         var wheatsubtotal = WheatFromOrganicFarmsinput.value*34;
     WheatFromOrganicFarmssubtotal.textContent = "£"+wheatsubtotal+".00";
     map.set('WheatFromOrganicFarmsinput',wheatsubtotal);
@@ -351,7 +371,7 @@ var subtotal = 0;
 
 
 upact.addEventListener("click",changetotal);
-
+var clickupact = true;
     function changetotal() {
         var subtotal = 0;
         map.forEach((value) => {
@@ -360,5 +380,117 @@ upact.addEventListener("click",changetotal);
         })
         subtotalprice.textContent = "£"+subtotal+".00";
         totalprice.textContent = "£"+subtotal+".00";
+        localStorage.setItem("acquantity",assortedcoffeeinput.value);
+        localStorage.setItem("cbquantity",cashewbutterinput.value);
+        localStorage.setItem("dcquantity",diabeticcookiesinput.value);
+        localStorage.setItem("ffequantity",FarmFreshEggsinput.value);
+        localStorage.setItem("fojquantity",FreshOrangeJuiceinput.value);
+        localStorage.setItem("fohquantity",FreshOrganicHoneyinput.value);
+        localStorage.setItem("hsquantity",HandSanitizerinput.value);
+        localStorage.setItem("hrcquantity",HandpickedRedChilliesinput.value);
+        localStorage.setItem("neeoquantity",NaturalExtractedEdibleOilinput.value);
+        localStorage.setItem("ofsquantity",OrganicFaceScrubinput.value);
+        localStorage.setItem("pfofquantity",PulsesFromOrganicFarminput.value);
+        localStorage.setItem("wfofquantity",WheatFromOrganicFarmsinput.value);
+        clickupact = false;
     }
 
+
+
+checkoutbtn.addEventListener("click",() =>{
+    if((clickupact == true) && (updateinput == false)){
+        localStorage.setItem("acquantity",localStorage.getItem("assortedcoffeequantity"));
+        localStorage.setItem("cbquantity",localStorage.getItem("cashewbutterquantity"));
+        localStorage.setItem("dcquantity",localStorage.getItem("diabeticcookiesquantity"));
+        localStorage.setItem("ffequantity",localStorage.getItem("fresheggquantity"));
+        localStorage.setItem("fojquantity",localStorage.getItem("freshorangejuicequantity"));
+        localStorage.setItem("fohquantity",localStorage.getItem("freshhoneyquantity"));
+        localStorage.setItem("hsquantity",localStorage.getItem("handsanitizerquantity"));
+        localStorage.setItem("hrcquantity",localStorage.getItem("redchillyquantity"));
+        localStorage.setItem("neeoquantity",localStorage.getItem("extractedoilquantity"));
+        localStorage.setItem("ofsquantity",localStorage.getItem("facescrubquantity"));
+        localStorage.setItem("pfofquantity",localStorage.getItem("pulsesquantity"));
+        localStorage.setItem("wfofquantity",localStorage.getItem("wheatquantity"));
+    }
+    
+})
+
+const accross = document.querySelector(".accross");
+
+
+
+accross.addEventListener("click",function() {
+    localStorage.removeItem("clickedassortedcoffee");
+    window.location.reload();
+},10000);
+
+const cbcross = document.querySelector(".cbcross");
+cbcross.addEventListener("click",() =>{
+    localStorage.removeItem("clickedcashewbutterquantity");
+    window.location.reload();
+})
+
+const dccross = document.querySelector(".dccross");
+dccross.addEventListener("click",() =>{
+    localStorage.removeItem("clickeddiabeticcookiesquantity");
+    window.location.reload();
+})
+
+const ffecross = document.querySelector(".ffecross");
+ffecross.addEventListener("click",() =>{
+    localStorage.removeItem("clickfresheggquantity");
+    window.location.reload();
+})
+
+const fojcross = document.querySelector(".fojcross");
+fojcross.addEventListener("click",() =>{
+    localStorage.removeItem("clickedfreshorangejuice");
+    window.location.reload();
+})
+
+const fohcross = document.querySelector(".fohcross");
+fohcross.addEventListener("click",() =>{
+    localStorage.removeItem("clickedfreshhoney");
+    window.location.reload();
+})
+
+const hscross = document.querySelector(".hscross");
+hscross.addEventListener("click",() =>{
+    localStorage.removeItem("clickedhandsanitizer");
+    window.location.reload();
+})
+
+const hrccross = document.querySelector(".hrccross");
+hrccross.addEventListener("click",() =>{
+    localStorage.removeItem("clickedredchilly");
+    window.location.reload();
+})
+
+const neeocross = document.querySelector(".neeocross");
+neeocross.addEventListener("click",() =>{
+    localStorage.removeItem("clickedextractedoilquantity");
+    window.location.reload();
+})
+
+const ofscross = document.querySelector(".ofscross");
+ofscross.addEventListener("click",() =>{
+    localStorage.removeItem("clickedfacescrub");
+    window.location.reload();
+})
+
+const pfmfcross = document.querySelector(".pfmfcross");
+pfmfcross.addEventListener("click",() =>{
+    localStorage.removeItem("clickedpulses");
+    window.location.reload();
+})
+
+const wfofcross = document.querySelector(".wfofcross");
+wfofcross.addEventListener("click",() =>{
+    localStorage.removeItem("clickedwheat");
+    window.location.reload();
+})
+
+const paycard = document.querySelector(".paycard");
+if(subtotal == 0){
+    paycard.classList.add("inactive");
+}
