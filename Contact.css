@@ -8,7 +8,7 @@
 
 
 .container{
-    height: 100vh;
+    height: auto;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -178,7 +178,7 @@
 }
 
 .contact-info{
-    height: 310px;
+    height: auto;
     width: 1200px;
     background-color: #FFFFFF;
     margin-left: 140px;
@@ -225,7 +225,7 @@
 }
 
 .frequently-asked-questions{
-    height: 450px;
+    height: auto;
     width: 100%;
     margin-top: 110px;
     display: flex;
@@ -259,10 +259,40 @@
 .question{
     cursor: pointer;
     width: 500px;
-    height: 50px;
+    height: auto;
 }
 
-.que-arrow{
+.que-arrow-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.que-arrow-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.que-arrow-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.que-arrow-4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.que-arrow-5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.que-arrow-6{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -293,6 +323,78 @@
     opacity: .1;
     z-index: -1;
 }
+
+.answer0{
+    margin-top: 10px;
+    width: 470px;
+    margin-left: 30px;
+    transition: all;
+    transition:max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer-1{
+    margin-top: 10px;
+    width: 470px;
+    margin-left: 30px;
+    transition: all;
+    transition:max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer-2{
+    margin-top: 10px;
+    width: 470px;
+    margin-left: 30px;
+    transition: all;
+    transition:max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer-3{
+    margin-top: 10px;
+    width: 470px;
+    margin-left: 30px;
+    transition: all;
+    transition:max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer-4{
+    margin-top: 10px;
+    width: 470px;
+    margin-left: 30px;
+    transition: all;
+    transition:max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer-5{
+    margin-top: 10px;
+    width: 470px;
+    margin-left: 30px;
+    transition: all;
+    transition:max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answeractive{
+    margin-top: 10px;
+    max-height: 70px;
+}
+
+.p{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+
 
 .footer{
     /* margin-top: 00px; */

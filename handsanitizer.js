@@ -672,3 +672,28 @@ if (count>0) {
     btn3.classList.add("inactive");
     btn1.classList.remove("inactive");
 }
+
+const review = document.querySelector(".review");
+const reviewsubmit = document.querySelector(".review-submit");
+const description = document.querySelector(".description");
+const freshproduct = document.querySelector(".fresh-product");
+const reviewsubmitpara1 = document.querySelector(".review-submit-para-1");
+
+description.classList.add("mtborder");
+reviewsubmit.classList.add("inactive");
+
+review.addEventListener("click",() => {
+    reviewsubmit.classList.remove("inactive");
+    freshproduct.classList.add("inactive");
+    reviewsubmitpara1.textContent = "There are no reviews yet.";
+    description.classList.remove("mtborder");
+    review.classList.add("mtborder");
+})
+
+description.addEventListener("click",() => {
+    freshproduct.classList.remove("inactive");
+    reviewsubmit.classList.add("inactive");
+    reviewsubmitpara1.textContent = "Neque porro quisquam est, qui dolore ipsum quia dolor sit amet, consectetur adipisci velit, sed quia non incidunt lores ta porro ame. numquam eius modi tempora incidunt lores ta porro ame.";
+    review.classList.remove("mtborder");
+    description.classList.add("mtborder");
+})

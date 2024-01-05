@@ -800,15 +800,80 @@
     font-size: 14px;
     font-weight: 700;
 }
+.mtborder{
+    border-top: 2.5px solid #a2f544;
+    margin-top: -2px;
+}
+
+.ac-wrapper{
+    height: auto;
+    width: 100%;
+    background-color:#f8f6f3;
+    margin-top: 20px;
+    padding-top: 50px;
+}
+
+.fresh-product{
+    margin-top: 60px;
+}
+
+.review-freshproduct{
+    height: auto;
+    width: 1220px;
+    margin-left: 130px;
+}
+
+.description{
+    font-size: 16px;
+    color: #515151;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.review{
+    font-size: 16px;
+    color: #515151;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+}
+
+.reviewno{
+    margin-left:3px;
+    font-size: 16px;
+    color: #515151;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.underline-2{
+    height: 1px;
+    width: 1220px;
+   border-bottom:.25px solid #333333;
+    /* background-color: #333333; */
+    margin-left: 130px;
+    margin-top: 62px;
+}
+
+.opt{
+    height: 20px;
+    width: 90px;
+    display: flex;
+    gap:15px;
+}
+
+
 
 .footer{
-    margin-top: -100px;
     height: 700px;
     width: 100%;
     background-color: #001524;
     /* display: flex;
     justify-content: center; */
-    
+    margin-top: 100px;
 }
 
 .footer-content{
